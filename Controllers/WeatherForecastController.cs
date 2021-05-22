@@ -23,7 +23,8 @@ namespace Datahubi.Controllers
         [HttpGet]
         public ActionResult Get()
         {
-            return Ok(new { DateTime.Now, _rep.database.Settings });
+            var colecoes = _rep.Area.Obter();
+            return Ok(new { DateTime.Now, colecoes });
         }
     }
 }
