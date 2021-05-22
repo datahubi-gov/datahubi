@@ -34,7 +34,7 @@ export type ChartOptions = {
 })
 export class GraficoComponent implements OnInit {
 
-  @ViewChild("chart") chart: ChartComponent;
+  // @ViewChild("chart") chart: ChartComponent;
   public chartOptions: Partial<ChartOptions> = {
     series: [],
     chart: {
