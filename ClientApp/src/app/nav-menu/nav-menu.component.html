@@ -9,22 +9,49 @@
     <div class="menu-principal">
       <ul>
         <li [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
-          <a [routerLink]="['/']"><i class="las la-clipboard-list"></i> Início</a>
+          <a [routerLink]="['/']">
+            <p><i class="las la-clipboard-list"></i> Início</p>
+          </a>
         </li>
         <li [routerLinkActive]="['link-active']">
-          <a [routerLink]="['/counter']"><i class="las la-heartbeat"></i> Saúde</a>
+          <a [routerLink]="['/counter']">
+            <p><i class="las la-heartbeat"></i> Saúde</p>
+          </a>
         </li>
         <li [routerLinkActive]="['link-active']">
-          <a [routerLink]="['/fetch-data']"><i class="las la-chalkboard-teacher"></i> Educação</a>
+          <a [routerLink]="['/educacao']">
+            <p><i class="las la-graduation-cap"></i> Educação</p>
+          </a>
         </li>
         <li [routerLinkActive]="['link-active']">
-          <a [routerLink]="['/fetch-data']"><i class="las la-shield-alt"></i> Segurança Pública</a>
+          <a [routerLink]="['/fetch-data']">
+            <p><i class="las la-shield-alt"></i> Segurança Pública</p>
+          </a>
         </li>
         <li [routerLinkActive]="['link-active']">
-          <a [routerLink]="['/fetch-data']"><i class="las la-file-invoice-dollar"></i> Fazenda</a>
+          <a [routerLink]="['/fetch-data']">
+            <p><i class="las la-file-invoice-dollar"></i> Fazenda</p>
+          </a>
         </li>
         <li [routerLinkActive]="['link-active']">
-          <a [routerLink]="['/fetch-data']"><i class="las la-city"></i> Infra-estrutura</a>
+          <a [routerLink]="['/fetch-data']">
+            <p><i class="las la-city"></i> Infra-estrutura</p>
+          </a>
+        </li>
+        <li [routerLinkActive]="['link-active']">
+          <a [routerLink]="['/fetch-data']">
+            <p><i class="lab la-pagelines"></i> Meio ambiente</p>
+          </a>
+        </li>
+        <li [routerLinkActive]="['link-active']">
+          <a [routerLink]="['/fetch-data']">
+            <p><i class="las la-ruler-combined"></i> Planejamento</p>
+          </a>
+        </li>
+        <li [routerLinkActive]="['link-active']">
+          <a [routerLink]="['/fetch-data']">
+            <p><i class="las la-hand-holding-heart"></i> Ação social</p>
+          </a>
         </li>
       </ul>
     </div>
@@ -36,5 +63,11 @@
       <i class="las la-plug marca"></i>
       <p>Conectar <b>fonte de dados</b></p>
     </div>
+
+    <div class="separador-0"></div>
+
+    <p>
+      <i class="las la-plug"></i> Última conexão realizada em 22/05/2021
+    </p>
   </nav>
 </header>

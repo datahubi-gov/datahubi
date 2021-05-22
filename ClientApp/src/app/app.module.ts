@@ -11,6 +11,7 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { GraficoComponent } from './grafico/grafico.component';
+import { EducacaoComponent } from './educacao/educacao.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { GraficoComponent } from './grafico/grafico.component';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    GraficoComponent
+    GraficoComponent,
+    EducacaoComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -30,6 +32,7 @@ import { GraficoComponent } from './grafico/grafico.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'educacao', component: EducacaoComponent },
     ])
   ],
   providers: [],

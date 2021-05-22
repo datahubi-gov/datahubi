@@ -21,11 +21,11 @@ html {
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
-  //font-weight: normal;
 }
 
 h1, h2, h3, h4, h5, h6{
   font-weight: bold;
+  letter-spacing: -0.04em;
 }
 
 ol, ul {
@@ -57,23 +57,62 @@ code {
 
 .titulo{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px;
   
-  i{
-    font-size: 5em;
-    color: $cor-secundaria;
-  }
-  
-  h1{
-    font-weight: normal;
-    letter-spacing: -0.08em;
+  .pagina{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
 
-    b{
-      font-weight: bold;
+    i{
+      font-size: 5em;
+      color: $cor-secundaria;
+    }
+
+    h1{
+      font-weight: normal;
+      letter-spacing: -0.08em;
+  
+      b{
+        font-weight: bold;
+      }
     }
   }
+  
+  .info{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    p{
+      font-size: 1.4em;
+    }
+
+    ul{
+      display: flex;
+      gap: 20px;
+    }
+    
+    li{
+      a{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: .9em;
+        //color: $cor-primaria;
+        text-decoration: none;
+        font-size: 1em;
+
+        i{
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+  
 }
 
 .separador{
@@ -142,26 +181,46 @@ code {
     a{
       display: block;
       padding: 7px 0;
-      border-radius: 3px;
       font-weight: bold;
       text-transform: uppercase;
       color: $cor-texto;
       transition: padding .2s;
       text-decoration: none;
+      position: relative;
+      font-size: 1.1em;
+
+      &:before{
+        @extend %gradiente-back-1;
+        content: ' ';
+        display: block;
+        position: absolute; z-index: 0;
+        top: 0; left: 0; bottom: 0; right: 0;
+        border-radius: 3px;
+        opacity: 0;
+        transition: opacity .2s;
+      }
 
       i{
         font-size: 1.6em;
         position: relative; top: 2px; left: -5px;
       }
 
+      p{
+        position: relative;
+        z-index: 1;
+      }
+
       &:hover{
-        @extend %gradiente-back-1;
         text-decoration: none;
         color: #fff;
         padding-left: 20px;
 
-        i{
+        i, p{
           color: #fff;
+        }
+
+        &:before{
+          opacity: 1;
         }
       }
     }
@@ -201,6 +260,7 @@ code {
   font-weight: bold;
   display: flex;
   position: relative;
+  gap: 10px;
   align-items: center;
   padding: 20px;
   overflow: hidden;
@@ -233,5 +293,40 @@ code {
     }
   }
 }
+
+.indicador-texto{
+  @extend %gradiente-back-3;
+  @include box-shadow(rgba($cor-9, .5) 0 5px 20px);
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  position: relative;
+  gap: 10px;
+  align-items: center;
+  padding: 15px;
+
+  *{
+    color: #fff;
+    line-height: 1em;
+  }
+
+  i{
+    font-size: 3.5em;
+  }
+
+  b{
+    font-size: 2em;
+  }
+
+  p{
+    font-size: .8em;
+  }
+
+  &.secundario{
+    @extend %gradiente-back-5;
+    @include box-shadow(rgba($cor-11, .5) 0 5px 20px);
+  }
+}
+
 
 // #endregion dashboard 

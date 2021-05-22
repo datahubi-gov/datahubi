@@ -1,15 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
+  selector: 'app-educacao',
+  templateUrl: './educacao.component.html',
+  styleUrls: ['./educacao.component.css']
 })
-export class HomeComponent {
+export class EducacaoComponent implements OnInit {
 
   public chartOptions: Partial<any> = {};
   public PieOptions: Partial<any> = {};
+  public PieOptions2: Partial<any> = {};
 
-  constructor() {
+  constructor() { }
+
+  ngOnInit(): void {
     setTimeout(() => {
       this.chartOptions = {
         series: [
@@ -78,21 +82,38 @@ export class HomeComponent {
       // *************************
 
       this.PieOptions = {
-        series: [20, 80],
+        series: [5, 95],
         chart: {
           type: "pie"
         },
         legend: {
-          show: false
+          //show: false
+          position: "bottom"
         },
         dataLabels: {
-          enabled: false
+          //enabled: false
         },
-        labels: ["IPTU", "Outros"],
+        labels: ["Ocupação", "Capacidade"],
+        responsive: []
+      };
+
+      this.PieOptions2 = {
+        series: [5, 95],
+        chart: {
+          type: "pie"
+        },
+        legend: {
+          //show: false
+          position: "bottom"
+        },
+        dataLabels: {
+          //enabled: false
+        },
+        labels: ["Ocupação", "Capacidade"],
         responsive: []
       };
 
     }, 1000);
-
   }
+
 }

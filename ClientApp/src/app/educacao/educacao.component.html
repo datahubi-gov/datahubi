@@ -1,0 +1,113 @@
+<div class="titulo">
+    <div class="pagina">
+        <i class="las la-graduation-cap"></i>
+        <div>
+            <h1><b>Educação</b></h1>
+            <p>Indicadores da secretaria municipal de educação</p>
+        </div>
+    </div>
+    <div class="info">
+        <p><i class="las la-user-tie"></i> Secretário: <b>José da Guia</b></p>
+        <ul>
+            <li>
+                <a href="#"><i class="las la-phone-volume"></i> (63) 3415-4587</a>
+            </li>
+            <li>
+                <a href="#"><i class="las la-envelope"></i> educacao@araguaina.to.gov.br</a>
+            </li>
+            <!-- <li>
+                <a href="#"><i class="las la-link"></i> araguaina.to.gov.br/educacao</a>
+            </li> -->
+        </ul>
+    </div>
+</div>
+
+<div class="separador"></div>
+
+<div class="row gx-5">
+    <div class="col-md-6">
+        <div>
+            <h5 class="mb-3">Quadro de recursos humanos</h5>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="indicador-texto">
+                        <i class="las la-chalkboard-teacher"></i>
+                        <div>
+                            <b>2487</b>
+                            <p>professores</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="indicador-texto">
+                        <i class="las la-user-graduate"></i>
+                        <div>
+                            <b>17487</b>
+                            <p>alunos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="indicador-texto">
+                        <i class="las la-user-cog"></i>
+                        <div>
+                            <b>7421</b>
+                            <p>colaboradores</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="separador"></div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="mb-3">Capacidade x ocupação</h5>
+                <!-- <grafico [opcoes]="chartOptions" tipo="bar"></grafico> -->
+                <grafico [opcoes]="PieOptions" tipo="pie"></grafico>
+            </div>
+            <div class="col-md-6">
+                <h5 class="mb-3">Análise de ociosidade</h5>
+                <!-- <grafico [opcoes]="chartOptions" tipo="bar"></grafico> -->
+                <grafico [opcoes]="PieOptions" tipo="pie"></grafico>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <h5 class="mb-3">Estrutura física</h5>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="indicador-texto secundario">
+                    <i class="las la-building"></i>
+                    <div>
+                        <b>157</b>
+                        <p>escolas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="indicador-texto secundario">
+                    <i class="las la-home"></i>
+                    <div>
+                        <b>12</b>
+                        <p>creches</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+
+        <div class="separador"></div>
+
+        <h5 class="mb-1">Relação de custos</h5>
+        <p class="mb-3">Custo com discentes, custo com a equipe administrativo, custos operacionais</p>
+        <div>
+            <grafico [opcoes]="chartOptions" tipo="bar"></grafico>
+        </div>
+    </div>
+</div>
