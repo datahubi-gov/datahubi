@@ -1,7 +1,7 @@
 <header>
-  <nav>
+  <nav class="topo-menu">
     <div class="container-fluid">
-      <a [routerLink]="['/']" style="display: block;">
+      <a [routerLink]="['/']" class="logo">
         <img src="../../assets/img/logo.svg" alt="">
       </a>
       
@@ -9,16 +9,25 @@
         aria-label="Toggle navigation" [attr.aria-expanded]="isExpanded" (click)="toggle()">
         <span class="navbar-toggler-icon"></span>
       </button> -->
-      <div>
-        <ul class="list-group">
-          <li class="list-group-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
-            <a [routerLink]="['/']">Home</a>
+      <div class="menu-principal">
+        <ul>
+          <li [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a [routerLink]="['/']"><i class="las la-home"></i> Início</a>
           </li>
-          <li class="list-group-item" [routerLinkActive]="['link-active']">
-            <a [routerLink]="['/counter']">Counter</a>
+          <li [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/counter']"><i class="las la-heartbeat"></i> Saúde</a>
           </li>
-          <li class="list-group-item" [routerLinkActive]="['link-active']">
-            <a [routerLink]="['/fetch-data']">Fetch data</a>
+          <li [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/fetch-data']"><i class="las la-chalkboard-teacher"></i> Educação</a>
+          </li>
+          <li [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/fetch-data']"><i class="las la-shield-alt"></i> Segurança Pública</a>
+          </li>
+          <li [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/fetch-data']"><i class="las la-file-invoice-dollar"></i> Fazenda</a>
+          </li>
+          <li [routerLinkActive]="['link-active']">
+            <a [routerLink]="['/fetch-data']"><i class="las la-city"></i> Infra-estrutura</a>
           </li>
         </ul>
       </div>

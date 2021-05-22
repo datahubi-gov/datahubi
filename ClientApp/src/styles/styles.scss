@@ -1,0 +1,153 @@
+@import '~compass-mixins/lib/compass/css3';
+@import 'variaveis';
+@import 'extends';
+
+// #region gerais
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  color: $cor-texto;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+// #endregion gerais
+
+// #region compartilhados
+
+.titulo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  
+  i{
+    font-size: 4em;
+    color: $cor-primaria;
+  }
+
+  h1{
+    letter-spacing: -0.08em;
+  }
+}
+
+.overlay{
+  position: fixed; z-index: 9999;
+  top: 0; left: 0; right: 0; bottom: 0;
+  //background: darken($cor-font, 10%);
+  background: rgba($cor-texto, .9);
+  display: grid;
+  place-items: center;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+// #endregion compartilhados
+
+// #region topo e menu
+
+.topo-menu{
+  padding-right: 50px;
+}
+
+.logo{
+  display: block;
+  margin: 8px 0 30px 0;
+
+  img{
+    max-height: 60px;
+  }
+}
+
+.menu-principal{
+
+  li{
+    a{
+      display: block;
+      padding: 7px 15px;
+      border-radius: 3px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $cor-texto;
+      transition: padding .2s;
+
+      i{
+        font-size: 1.6em;
+        position: relative; top: 2px; left: -5px;
+      }
+
+      &:hover{
+        @extend %gradiente-back-1;
+        text-decoration: none;
+        color: #fff;
+        padding-left: 25px;
+
+        i{
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+// #endregion topo e menu

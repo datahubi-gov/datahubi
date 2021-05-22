@@ -23,8 +23,10 @@
     "@angular/router": "8.2.12",
     "@nguniversal/module-map-ngfactory-loader": "8.1.1",
     "bootstrap": "^4.3.1",
+    "compass-mixins": "^0.12.10",
     "core-js": "^3.3.3",
     "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
     "oidc-client": "^1.9.1",
     "popper.js": "^1.16.0",
     "rxjs": "^6.5.3",
@@ -50,7 +52,6 @@
     "typescript": "3.5.3"
   },
   "optionalDependencies": {
-    "node-sass": "^5.0.0",
     "protractor": "~5.4.2",
     "ts-node": "~8.4.1",
     "tslint": "~5.20.0"
