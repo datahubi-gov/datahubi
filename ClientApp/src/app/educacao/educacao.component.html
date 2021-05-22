@@ -33,7 +33,7 @@
                     <div class="indicador-texto" [routerLink]="['/detalhes']">
                         <i class="las la-chalkboard-teacher"></i>
                         <div>
-                            <b>2487</b>
+                            <b>{{totalProfessor}}</b>
                             <p>professores</p>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                     <div class="indicador-texto">
                         <i class="las la-user-graduate"></i>
                         <div>
-                            <b>17487</b>
+                            <b>{{totalAluno}}</b>
                             <p>alunos</p>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                     <div class="indicador-texto">
                         <i class="las la-user-cog"></i>
                         <div>
-                            <b>7421</b>
+                            <b>{{totalColaborador}}</b>
                             <p>colaboradores</p>
                         </div>
                     </div>
@@ -64,18 +64,18 @@
         <div class="row">
             <div class="col-md-6">
                 <h5 class="mb-3">Capacidade x ocupação</h5>
-                <grafico *ngIf="dadosCarregados" [opcoes]="PieOptions" tipo="pie"></grafico>
+                <grafico *ngIf="dadosCarregados" [opcoes]="capacidadeXocupacao" tipo="pie"></grafico>
             </div>
             <div class="col-md-6">
                 <h5 class="mb-3">Média de ociosidade discente</h5>
-                <grafico *ngIf="dadosCarregados" [opcoes]="PieOptions2" tipo="pie"></grafico>
+                <grafico *ngIf="dadosCarregados" [opcoes]="mediaOciosidadeDiscente" tipo="pie"></grafico>
             </div>
         </div>
 
         <div class="separador"></div>
 
         <h5 class="mb-3">Evação escolar</h5>
-        <grafico *ngIf="dadosCarregados" [opcoes]="areaOptions" tipo="area"></grafico>
+        <grafico *ngIf="dadosCarregados" [opcoes]="evacaoEscolar" tipo="area"></grafico>
         
     </div>
 
@@ -86,7 +86,7 @@
                 <div class="indicador-texto secundario">
                     <i class="las la-building"></i>
                     <div>
-                        <b>157</b>
+                        <b>{{totalEscolas}}</b>
                         <p>escolas</p>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
                 <div class="indicador-texto secundario">
                     <i class="las la-home"></i>
                     <div>
-                        <b>12</b>
+                        <b>{{totalCreches}}</b>
                         <p>creches</p>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
         <h5 class="mb-1">Relação de custos</h5>
         <p class="mb-3">Custo com discentes, equipe administrativa e despesas operacionais</p>
         <div>
-            <grafico *ngIf="dadosCarregados" [opcoes]="chartOptions" tipo="bar"></grafico>
+            <grafico *ngIf="dadosCarregados" [opcoes]="custoPorSegmento" tipo="bar"></grafico>
         </div>
 
         <div class="separador"></div>
@@ -118,7 +118,7 @@
         <h5 class="mb-1">Custo por aluno</h5>
         <p class="mb-3">O custo total divido pela quantidade total de alunos</p>
         <div>
-            <grafico *ngIf="dadosCarregados" [opcoes]="chartOptions2" tipo="bar"></grafico>
+            <grafico *ngIf="dadosCarregados" [opcoes]="custoPorAluno" tipo="bar"></grafico>
         </div>
     </div>
 </div>
