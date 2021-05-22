@@ -79,6 +79,7 @@ lista_despesa_2019['qtd_discente_efetivo'] = round(lista_despesa_2019['qtd_disce
 lista_despesa_2019['qtd_discente_contrato'] = round(lista_despesa_2019['qtd_discente_contrato'] * 0.85,0)
 
 
+lista_despesa_2019['ano'] = 2019
 lista_despesa['qtd_discente_contrato'] = lista_despesa['qtd_discente_contrato'].astype(int)
 lista_despesa['qtd_discente_efetivo'] = lista_despesa['qtd_discente_efetivo'].astype(int)
 lista_despesa_2019['qtd_discente_contrato'] = lista_despesa_2019['qtd_discente_contrato'].astype(int)
@@ -101,7 +102,7 @@ lista_despesa = lista_despesa_2019.append(lista_despesa)
 lista_discentes = pd.DataFrame(columns=['id','escola','tipo','salario'])
 
 for index, row in lista_escolas.iterrows():
-    qtd_profesor = round(row['capacidade']/30)
+    qtd_profesor = round(row['capacidade']/18)
     lista_discentes = lista_discentes.append(pd.DataFrame({'id':0,'escola':index,'tipo':np.random.choice(["Efetivo","Contrato"], qtd_profesor,p=[0.4,0.6]),'salario':0.0}))
 
 condicao = lista_discentes['tipo'] == 'Efetivo'
