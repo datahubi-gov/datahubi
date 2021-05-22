@@ -64,16 +64,19 @@
         <div class="row">
             <div class="col-md-6">
                 <h5 class="mb-3">Capacidade x ocupação</h5>
-                <!-- <grafico [opcoes]="chartOptions" tipo="bar"></grafico> -->
                 <grafico [opcoes]="PieOptions" tipo="pie"></grafico>
             </div>
             <div class="col-md-6">
-                <h5 class="mb-3">Análise de ociosidade</h5>
-                <!-- <grafico [opcoes]="chartOptions" tipo="bar"></grafico> -->
-                <grafico [opcoes]="PieOptions" tipo="pie"></grafico>
+                <h5 class="mb-3">Média de ociosidade discente</h5>
+                <grafico [opcoes]="PieOptions2" tipo="pie"></grafico>
             </div>
-            
         </div>
+
+        <div class="separador"></div>
+
+        <h5 class="mb-3">Evação escolar</h5>
+        <grafico [opcoes]="areaOptions" tipo="area"></grafico>
+        
     </div>
 
     <div class="col-md-6">
@@ -105,9 +108,17 @@
         <div class="separador"></div>
 
         <h5 class="mb-1">Relação de custos</h5>
-        <p class="mb-3">Custo com discentes, custo com a equipe administrativo, custos operacionais</p>
+        <p class="mb-3">Custo com discentes, equipe administrativa e despesas operacionais</p>
         <div>
             <grafico [opcoes]="chartOptions" tipo="bar"></grafico>
+        </div>
+
+        <div class="separador"></div>
+
+        <h5 class="mb-1">Custo por aluno</h5>
+        <p class="mb-3">O custo total divido pela quantidade total de alunos</p>
+        <div>
+            <grafico [opcoes]="chartOptions2" tipo="bar"></grafico>
         </div>
     </div>
 </div>

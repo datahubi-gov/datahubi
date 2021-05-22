@@ -8,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class EducacaoComponent implements OnInit {
 
   public chartOptions: Partial<any> = {};
+  public chartOptions2: Partial<any> = {};
   public PieOptions: Partial<any> = {};
   public PieOptions2: Partial<any> = {};
+  public areaOptions: Partial<any> = {};
 
   constructor() { }
 
@@ -79,10 +81,66 @@ export class EducacaoComponent implements OnInit {
         }
       };
 
+      this.chartOptions2 = {
+        series: [
+          {
+            name: "Custo por aluno",
+            data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+          }
+        ],
+        chart: {
+          type: "bar",
+          height: 350
+        },
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            columnWidth: "55%",
+            // endingShape: "rounded"
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          show: true,
+          width: 2,
+          colors: ["transparent"]
+        },
+        xaxis: {
+          categories: [
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct"
+          ]
+        },
+        yaxis: {
+          title: {
+            text: "$ (thousands)"
+          }
+        },
+        fill: {
+          opacity: 1
+        },
+        tooltip: {
+          y: {
+            formatter: function (val) {
+              return "$ " + val + " thousands";
+            }
+          }
+        }
+      };
+
       // *************************
 
       this.PieOptions = {
-        series: [5, 95],
+        series: [15, 85],
         chart: {
           type: "pie"
         },
@@ -98,8 +156,9 @@ export class EducacaoComponent implements OnInit {
       };
 
       this.PieOptions2 = {
-        series: [5, 95],
+        series: [2, 98],
         chart: {
+          heigth: 50,
           type: "pie"
         },
         legend: {
@@ -109,11 +168,61 @@ export class EducacaoComponent implements OnInit {
         dataLabels: {
           //enabled: false
         },
-        labels: ["Ocupação", "Capacidade"],
+        labels: ["Percentual ocioso", "Percentual ativo"],
         responsive: []
       };
 
-    }, 1000);
+      // *************************
+
+      this.areaOptions = {
+        series: [
+          {
+            name: "2018",
+            data: [31, 40, 28, 51, 42, 109, 100]
+          },
+          {
+            name: "2019",
+            data: [11, 32, 45, 32, 34, 52, 41]
+          },
+          {
+            name: "2020",
+            data: [11, 48, 75, 32, 40, 22, 21]
+          }
+        ],
+        chart: {
+          height: 350,
+          type: "area",
+          toolbar: {
+            show: false
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: "smooth"
+        },
+        xaxis: {
+          type: "datetime",
+          categories: [
+            "2018-09-19T00:00:00.000Z",
+            "2018-09-19T01:30:00.000Z",
+            "2018-09-19T02:30:00.000Z",
+            "2018-09-19T03:30:00.000Z",
+            "2018-09-19T04:30:00.000Z",
+            "2018-09-19T05:30:00.000Z",
+            "2018-09-19T06:30:00.000Z"
+          ]
+        },
+        tooltip: {
+          x: {
+            format: "dd/MM/yy HH:mm"
+          }
+        }
+      };
+    
+
+    }, 600);
   }
 
 }
