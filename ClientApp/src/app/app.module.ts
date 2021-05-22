@@ -15,6 +15,7 @@ import { EducacaoComponent } from './educacao/educacao.component';
 import { DetalhesComponent } from './detalhes/detalhes.component';
 import { ApiModule, Configuration } from './shared/sdkcore';
 import { environment } from 'src/environments/environment';
+import { ComunicService } from './comunic.service';
 
 export const apiConfig = new Configuration({
   apiKeys: {},
@@ -50,7 +51,9 @@ export function getApiConfig() {
       { path: 'detalhes', component: DetalhesComponent },
     ])
   ],
-  providers: [],
+  providers: [
+    ComunicService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
+import { ComunicService } from '../comunic.service';
 import { DadosService } from '../shared/sdkcore';
 
 @Component({
@@ -22,7 +23,8 @@ export class EducacaoComponent implements OnInit {
   public totalCreches: number = 0;
 
   constructor(
-    @Inject(DadosService) public api: DadosService
+    @Inject(DadosService) public api: DadosService,
+    @Inject(ComunicService) public comunic: ComunicService,
   ) { }
 
   ngOnInit(): void {
@@ -31,7 +33,7 @@ export class EducacaoComponent implements OnInit {
 
     listaPromessa.push(
       this.api.dadosGet("educacao", "totais").toPromise().then((r: any[]) => {
-        console.log('totais', r);
+        // console.log('totais', r);
         // Indicadores Totalizadores
         let item = r.find(x => x.indicador == 'total_alunos');
         if (item) this.totalAluno = item.qtd;
@@ -43,11 +45,10 @@ export class EducacaoComponent implements OnInit {
         item = r.find(x => x.indicador == 'total_creches');
         if (item) this.totalCreches = item.qtd;
 
+        // Gráfico de Ociosidade
         let item_ociosidade = r.find(x => x.indicador == 'ociosidade');
         let item_ociosidade_parametro = r.find(x => x.indicador == 'ociosidade_parametro');
         let ocupacao = parseFloat(((item_ociosidade.qtd / item_ociosidade_parametro.qtd) * 100).toFixed(0));
-
-
         this.mediaOciosidadeDiscente = {
           series: [100 - ocupacao, ocupacao],
           chart: {
@@ -65,9 +66,9 @@ export class EducacaoComponent implements OnInit {
           responsive: []
         };
 
+        // Gráfico de Ocupação
         let capacidade = r.find(x => x.indicador == 'capacidade');
         let ocupacaoVagas = parseFloat(((this.totalAluno / capacidade.qtd) * 100).toFixed(0));
-
         this.capacidadeXocupacao = {
           series: [100 - ocupacaoVagas, ocupacaoVagas],
           chart: {
@@ -89,166 +90,20 @@ export class EducacaoComponent implements OnInit {
       })
     );
     listaPromessa.push(
-      this.api.dadosGet("educacao", "evasao").toPromise().then(r => {
-        console.log('evasao', r);
-      })
-    );
-    listaPromessa.push(
-      this.api.dadosGet("educacao", "relacao_custo").toPromise().then(r => {
-        console.log('relacao_custo', r);
-      })
-    );
-    listaPromessa.push(
-      this.api.dadosGet("educacao", "custoaluno").toPromise().then(r => {
-        console.log('custoaluno', r);
-      })
-    );
+      this.api.dadosGet("educacao", "evasao").toPromise().then((r: any[]) => {
+        // console.log('evasao', r);
 
-    Promise.all(listaPromessa).then(() => {
-      setTimeout(() => {
-        this.dadosCarregados = true;
-
-
-        this.custoPorSegmento = {
-          series: [
-            {
-              name: "Net Profit",
-              data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
-            },
-            {
-              name: "Revenue",
-              data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
-            },
-            {
-              name: "Free Cash Flow",
-              data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
-            }
-          ],
-          chart: {
-            type: "bar",
-            height: 350
-          },
-          plotOptions: {
-            bar: {
-              horizontal: false,
-              columnWidth: "55%",
-              // endingShape: "rounded"
-            }
-          },
-          dataLabels: {
-            enabled: false
-          },
-          stroke: {
-            show: true,
-            width: 2,
-            colors: ["transparent"]
-          },
-          xaxis: {
-            categories: [
-              "Feb",
-              "Mar",
-              "Apr",
-              "May",
-              "Jun",
-              "Jul",
-              "Aug",
-              "Sep",
-              "Oct"
-            ]
-          },
-          yaxis: {
-            title: {
-              text: "$ (thousands)"
-            }
-          },
-          fill: {
-            opacity: 1
-          },
-          tooltip: {
-            y: {
-              formatter: function (val) {
-                return "$ " + val + " thousands";
-              }
-            }
-          }
-        };
-
-        this.custoPorAluno = {
-          series: [
-            {
-              name: "Custo por aluno",
-              data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
-            }
-          ],
-          chart: {
-            type: "bar",
-            height: 350
-          },
-          plotOptions: {
-            bar: {
-              horizontal: false,
-              columnWidth: "55%",
-              // endingShape: "rounded"
-            }
-          },
-          dataLabels: {
-            enabled: false
-          },
-          stroke: {
-            show: true,
-            width: 2,
-            colors: ["transparent"]
-          },
-          xaxis: {
-            categories: [
-              "Feb",
-              "Mar",
-              "Apr",
-              "May",
-              "Jun",
-              "Jul",
-              "Aug",
-              "Sep",
-              "Oct"
-            ]
-          },
-          yaxis: {
-            title: {
-              text: "$ (thousands)"
-            }
-          },
-          fill: {
-            opacity: 1
-          },
-          tooltip: {
-            y: {
-              formatter: function (val) {
-                return "$ " + val + " thousands";
-              }
-            }
-          }
-        };
-
-
-
-
+        let series: any[] = [];
+        this.comunic.uniqueArrayByProperty(r, x => x.ano).forEach(ano => {
+          series.push({
+            name: ano,
+            data: r.filter(x => x.ano == ano).map(x => x.total)
+          });
+        });
 
 
         this.evacaoEscolar = {
-          series: [
-            {
-              name: "2018",
-              data: [31, 40, 28, 51, 42, 109, 100]
-            },
-            {
-              name: "2019",
-              data: [11, 32, 45, 32, 34, 52, 41]
-            },
-            {
-              name: "2020",
-              data: [11, 48, 75, 32, 40, 22, 21]
-            }
-          ],
+          series: series,
           chart: {
             height: 350,
             type: "area",
@@ -263,16 +118,8 @@ export class EducacaoComponent implements OnInit {
             curve: "smooth"
           },
           xaxis: {
-            type: "datetime",
-            categories: [
-              "2018-09-19T00:00:00.000Z",
-              "2018-09-19T01:30:00.000Z",
-              "2018-09-19T02:30:00.000Z",
-              "2018-09-19T03:30:00.000Z",
-              "2018-09-19T04:30:00.000Z",
-              "2018-09-19T05:30:00.000Z",
-              "2018-09-19T06:30:00.000Z"
-            ]
+            type: "string",
+            categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
           },
           tooltip: {
             x: {
@@ -281,8 +128,126 @@ export class EducacaoComponent implements OnInit {
           }
         };
 
+      })
+    );
+    listaPromessa.push(
+      this.api.dadosGet("educacao", "relacao_custo").toPromise().then((r: any[]) => {
+        // console.log('relacao_custo', r);
 
+        r = r.filter(x => x.ano == 2020);
 
+        this.custoPorSegmento = {
+          series: [
+            {
+              name: "Professores",
+              data: r.map(x => parseFloat(parseFloat(x.despesa_discente).toFixed(2)))
+            },
+            {
+              name: "Servidores Adm.",
+              data: r.map(x => parseFloat(parseFloat(x.despesa_administrativo).toFixed(2)))
+            },
+            {
+              name: "Despesas Adm.",
+              data: r.map(x => parseFloat(parseFloat(x.despesa_geral).toFixed(2)))
+            }
+          ],
+          chart: {
+            type: "bar",
+            height: 350
+          },
+          plotOptions: {
+            bar: {
+              horizontal: false,
+              columnWidth: "55%",
+              // endingShape: "rounded"
+            }
+          },
+          dataLabels: {
+            enabled: false
+          },
+          stroke: {
+            show: true,
+            width: 2,
+            colors: ["transparent"]
+          },
+          xaxis: {
+            categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+          },
+          yaxis: {
+            title: {
+              text: "Despesas"
+            }
+          },
+          fill: {
+            opacity: 1
+          },
+          tooltip: {
+            y: {
+              formatter: function (val) {
+                return "R$ " + val;
+              }
+            }
+          }
+        };
+      })
+    );
+    listaPromessa.push(
+      this.api.dadosGet("educacao", "custoaluno").toPromise().then((r: any[]) => {
+        console.log('custoaluno', r);
+        let series: any[] = [];
+        this.comunic.uniqueArrayByProperty(r, x => x.ano).forEach(ano => {
+          series.push({
+            name: ano,
+            data: r.filter(x => x.ano == ano).map(x => x.por_aluno)
+          });
+        });
+        this.custoPorAluno = {
+          series: series,
+          chart: {
+            type: "bar",
+            height: 350
+          },
+          plotOptions: {
+            bar: {
+              horizontal: false,
+              columnWidth: "55%",
+              // endingShape: "rounded"
+            }
+          },
+          dataLabels: {
+            enabled: false
+          },
+          stroke: {
+            show: true,
+            width: 2,
+            colors: ["transparent"]
+          },
+          xaxis: {
+            categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+          },
+          yaxis: {
+            title: {
+              text: "Custo por aluno"
+            }
+          },
+          fill: {
+            opacity: 1
+          },
+          tooltip: {
+            y: {
+              formatter: function (val) {
+                return "R$ " + val;
+              }
+            }
+          }
+        };
+
+      })
+    );
+
+    Promise.all(listaPromessa).then(() => {
+      setTimeout(() => {
+        this.dadosCarregados = true;
       }, 600);
     });
 
