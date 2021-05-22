@@ -28,7 +28,7 @@ bairros.loc[bairros["bairro"]=='SETOR ANHANGUERA','peso'] =0.05
 bairros.loc[bairros["bairro"]=='JORGE IUNES','peso'] =0.0501
 
 # Montar a lista fake
-qtd = 50 #Quantidade de Registros
+qtd = 50000 #Quantidade de Registros
 data_inicial = datetime.date(2020, 1, 1)
 data_final = datetime.date(2020, 12, 31)
 lista_tipos = ['IPTU','ISS','LIXO','MULTA', 'TAXAS']
@@ -48,8 +48,9 @@ ba = np.random.choice(bairros['bairro'], qtd,p=bairros.peso)
 datas = gerar_datas(qtd)
 tipos = np.random.choice(lista_tipos, qtd,p=lista_tipos_peso)
 pago = np.random.choice(['SIM','NAO'], qtd,p=[0.6,0.4])
+valores = np.random.randint(low=45,high=1800,size=qtd)
     
-dados = pd.DataFrame({'id':ids,'bairro':ba,'vencimento':datas['data'],'exercicio':datas['ano'],'tipo':tipos,'pago':pago})
+dados = pd.DataFrame({'id':ids,'bairro':ba,'vencimento':datas['data'],'exercicio':datas['ano'],'tipo':tipos,'pago':pago,'valor':valores})
 
 dados.vencimento = pd.to_datetime(dados.vencimento) # Comverte pra datetime
 dados = dados.sort_values(by=['vencimento'])
