@@ -1,7 +1,7 @@
 src_base = '../dados/educacao'
 dst_base = '../dadosprocessados/educacao'
 
-salvar = False
+salvar = True
 
 src_escolas = f'{src_base}/dados_seduc_escolas.csv'
 src_despesas = f'{src_base}/dados_seduc_despesas.csv'
@@ -84,4 +84,30 @@ if(salvar):
 ########### Escola  ##########################
 ##############################################
 
-print(escolas.head())
+prof = professores.groupby(['escola','tipo']).count()
+
+prof = prof.drop(columns=['salario'])
+prof.keys = ['escola']
+prof = prof.unstack().reset_index()
+prof = prof.droplevel(0,axis=1)
+prof.columns = ['escola','contrato','efetivo']
+# escolas.index = escolas.index.astype(int)
+# escolas['id'] = escolas['id'].astype(int)
+# prof['escola'] = prof['escola'].astype(int)
+
+al = alunos.groupby('escola').count()
+
+al = al[['id']]
+al.columns = ['alunos']
+al = al.reset_index()
+
+# print(al.head())
+
+
+esc = pd.merge(escolas,prof,how='left',left_on='id',right_on='escola').drop(columns=['escola'])
+esc = pd.merge(esc,al,how='left',left_on='id',right_on='escola').drop(columns=['escola'])
+print(esc.head())
+
+if(salvar):
+    esc.to_json(f'{dst_base}/escolas.json',orient="records")
+
