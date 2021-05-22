@@ -113,8 +113,8 @@ lista_discentes.loc[condicao,'salario'] = custo_dicente_contrato
 
 lista_discentes['id'] = np.arange(start=1, stop=len(lista_discentes)+1, step=1)
 
-print(lista_discentes.groupby('escola')['id'].count())
-print(lista_discentes.groupby('escola')['salario'].sum())
+# print(lista_discentes.groupby('escola')['id'].count())
+# print(lista_discentes.groupby('escola')['salario'].sum())
 # print(lista_discentes)
 
 
@@ -123,13 +123,25 @@ print(lista_discentes.groupby('escola')['salario'].sum())
 ########################################################
 #Campos:  id, escola, tipo (normal,especial) 
 
-lista_doscentes = pd.DataFrame(columns=['id','escola','tipo','salario'])
+lista_doscentes = pd.DataFrame(columns=['id','escola','tipo','desistiu','ano_desistencia','mes_desistencia'])
 
 for index, row in lista_escolas.iterrows():
     qtd_aluno = round(row['capacidade']*0.94)
-    lista_doscentes = lista_doscentes.append(pd.DataFrame({'id':0,'escola':index,'tipo':np.random.choice(["Normal","Especial"], qtd_aluno,p=[0.95,0.05])}))
+    lista_doscentes = lista_doscentes.append(pd.DataFrame({'id':0,'escola':index,'tipo':np.random.choice(["Normal","Especial"], qtd_aluno,p=[0.95,0.05]),'desistiu':np.random.choice(["SIM","NAO"], qtd_aluno,p=[0.04,0.96])}))
 
 lista_doscentes['id'] = np.arange(start=1, stop=len(lista_doscentes)+1, step=1)
+
+
+
+condicao = lista_doscentes['desistiu'] == 'SIM';
+lista_doscentes['ano_desistencia'] = 0;
+lista_doscentes['mes_desistencia'] = 0;
+lista_doscentes.loc[condicao,'ano_desistencia'] = np.random.choice([2019,2020],len(lista_doscentes.loc[condicao]),p=[0.6,0.4])
+lista_doscentes.loc[condicao,'mes_desistencia'] = np.random.choice([1,2,3,4,5,6,7,8,9,10,11,12],len(lista_doscentes.loc[condicao]))
+lista_doscentes['ano_desistencia'] = lista_doscentes['ano_desistencia'].astype(int)
+lista_doscentes['mes_desistencia'] = lista_doscentes['mes_desistencia'].astype(int)
+print(lista_doscentes.loc[lista_doscentes['desistiu'] == 'SIM'].head())
+# lista_doscentes.loc[lista_doscentes['desistiu'] == 'SIM','mes_desistencia'].apply(np.random.choice([1,2,3,4,5,6,7,8,9,10,11,12]))
 # print(lista_doscentes.groupby('escola')['id'].count())
 
 
