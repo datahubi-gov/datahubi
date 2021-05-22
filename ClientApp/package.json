@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "sdk": "openapi-generator generate -i http://localhost:5000/swagger/v1/swagger.json -g typescript-angular -o src/app/shared/sdkcore"
+    "sdk": "openapi-generator generate -i http://localhost:5000/swagger/v1/swagger.json -g typescript-angular -o src/app/shared/sdkcore",
+    "hmr": "ng serve --configuration hmr"
   },
   "private": true,
   "dependencies": {
