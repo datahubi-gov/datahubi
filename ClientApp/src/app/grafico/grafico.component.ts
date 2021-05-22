@@ -12,7 +12,9 @@ import {
   ApexXAxis,
   ApexFill,
   ApexTooltip,
-  ChartType
+  ChartType,
+  ApexNonAxisChartSeries,
+  ApexResponsive
 } from "ng-apexcharts";
 
 export type ChartOptions = {
@@ -28,6 +30,14 @@ export type ChartOptions = {
   legend: ApexLegend;
 };
 
+export type PieOptions = {
+  series: ApexNonAxisChartSeries;
+  chart: ApexChart;
+  responsive: ApexResponsive[];
+  labels: any;
+  legend: ApexLegend;
+};
+
 @Component({
   selector: 'grafico',
   templateUrl: './grafico.component.html',
@@ -40,24 +50,21 @@ export class GraficoComponent implements OnInit {
 
   @ViewChild("chart") chart: ChartComponent;
 
-
-  @Input() public set opcoes(_opcoes: Partial<ChartOptions>) {
+  @Input() public set opcoes(_opcoes: any) {
     setTimeout(() => {
       this.chartOptions = _opcoes;
     });
-
   }
 
-  public chartOptions: Partial<ChartOptions> = {
+  public chartOptions: any = {
     series: [],
     chart: {
       type: this.tipo
     }
   };
+
+
   constructor() { }
-
-
-
 
   uniqueArrayByProperty(array, callback) {
     return array.reduce((prev, item) => {
