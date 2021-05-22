@@ -52,7 +52,7 @@ custo_dicente_efetivo = 3500.7
 custo_dicente_contrato = 1500.3
 custo_administrativo = 1800.2
 diretor = 5346.46
-pespesa_fixa = [450.93,743.35,259.60,1235.29]
+despesa_fixa = [450.93,743.35,259.60,1235.29,129,956]
 
 #ID Escola, Mes, Ano, qtd_discente_efetivo, qtd_discente_contrato,qtd_administrativo,
 lista_despesa = pd.DataFrame(columns=['escola','tipo','ano','mes','qtd_discente_efetivo'])
@@ -85,12 +85,21 @@ lista_despesa['qtd_discente_efetivo'] = lista_despesa['qtd_discente_efetivo'].as
 lista_despesa_2019['qtd_discente_contrato'] = lista_despesa_2019['qtd_discente_contrato'].astype(int)
 lista_despesa_2019['qtd_discente_efetivo'] = lista_despesa_2019['qtd_discente_efetivo'].astype(int)
 
-lista_despesa['despesa'] = (lista_despesa['qtd_discente_contrato'] * custo_dicente_contrato) + (lista_despesa['qtd_discente_efetivo'] * custo_dicente_efetivo) + diretor + ((lista_despesa['qtd_discente_contrato'] + lista_despesa['qtd_discente_efetivo'])*np.random.choice(pespesa_fixa,1))
-lista_despesa_2019['despesa'] = (lista_despesa_2019['qtd_discente_contrato'] * custo_dicente_contrato) + (lista_despesa_2019['qtd_discente_efetivo'] * custo_dicente_efetivo) + diretor + ((lista_despesa_2019['qtd_discente_contrato'] + lista_despesa_2019['qtd_discente_efetivo'])*np.random.choice(pespesa_fixa,1))
+lista_despesa['despesa_discente'] = ((lista_despesa['qtd_discente_contrato'] * custo_dicente_contrato) + (lista_despesa['qtd_discente_efetivo'] * custo_dicente_efetivo))*1.5
+lista_despesa['despesa_administrativo'] = (lista_despesa['qtd_discente_efetivo'] * (diretor*0.45)) + diretor 
+lista_despesa['despesa_geral'] = ((lista_despesa['qtd_discente_contrato'] + lista_despesa['qtd_discente_efetivo'])*np.random.choice(despesa_fixa,1))
+lista_despesa['despesa'] = lista_despesa['despesa_discente'] + lista_despesa['despesa_administrativo'] + lista_despesa['despesa_geral']
+# lista_despesa['despesa'] = (lista_despesa['qtd_discente_contrato'] * custo_dicente_contrato) + (lista_despesa['qtd_discente_efetivo'] * custo_dicente_efetivo) + diretor + ((lista_despesa['qtd_discente_contrato'] + lista_despesa['qtd_discente_efetivo'])*np.random.choice(pespesa_fixa,1))
 
-lista_despesa = lista_despesa_2019.append(lista_despesa)
+lista_despesa_2019['despesa_discente'] = (lista_despesa_2019['qtd_discente_contrato'] * custo_dicente_contrato) + (lista_despesa_2019['qtd_discente_efetivo'] * custo_dicente_efetivo) 
+lista_despesa_2019['despesa_administrativo'] = (lista_despesa_2019['qtd_discente_efetivo'] * (diretor*0.45)) + diretor 
+lista_despesa_2019['despesa_geral'] = ((lista_despesa_2019['qtd_discente_contrato'] + lista_despesa_2019['qtd_discente_efetivo'])*np.random.choice(despesa_fixa,1))
+lista_despesa_2019['despesa'] = lista_despesa_2019['despesa_discente'] + lista_despesa_2019['despesa_administrativo']  + lista_despesa_2019['despesa_geral']
+# lista_despesa_2019['despesa'] = (lista_despesa_2019['qtd_discente_contrato'] * custo_dicente_contrato) + (lista_despesa_2019['qtd_discente_efetivo'] * custo_dicente_efetivo) + diretor + ((lista_despesa_2019['qtd_discente_contrato'] + lista_despesa_2019['qtd_discente_efetivo'])*np.random.choice(pespesa_fixa,1))
 
-# print(lista_despesa_2019.head(1))
+lista_despesa = lista_despesa_2019.append(lista_despesa).reset_index()
+
+# print(lista_despesa.head(20))
 
 
 
