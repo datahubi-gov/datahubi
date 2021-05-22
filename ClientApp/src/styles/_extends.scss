@@ -5,3 +5,23 @@
 %gradiente-back-2{
     background-image: linear-gradient(90deg, $cor-3, $cor-4);
 }
+
+%gradiente-back-3{
+    background-image: linear-gradient(90deg, $cor-5, $cor-6);
+}
+
+%gradiente-back-4{
+    background-image: linear-gradient(90deg, $cor-7, $cor-8, $cor-9);
+}
+
+%gradiente-texto-1{
+    @extend %gradiente-back-1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+%gradiente-texto-2{
+    @extend %gradiente-back-2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
