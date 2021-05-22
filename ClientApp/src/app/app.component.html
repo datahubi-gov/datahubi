@@ -1,6 +1,12 @@
-<body>
-  <app-nav-menu></app-nav-menu>
-  <div class="container">
-    <router-outlet></router-outlet>
+<body class="p-5">
+  <div class="row">
+    <div class="col-md-3">
+      <app-nav-menu></app-nav-menu>
+    </div>
+    <div class="col-md-9">
+      <div class="container-fluid">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
   </div>
 </body>
