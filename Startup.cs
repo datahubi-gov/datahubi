@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 
 namespace Datahubi
@@ -21,13 +22,18 @@ namespace Datahubi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Configurações do banco de dados
+            services.Configure<Data.DatabaseSettings>(Configuration.GetSection(nameof(Data.DatabaseSettings)));
+            services.AddSingleton<Data.IDatabaseSettings>(sp => sp.GetRequiredService<IOptions<Data.DatabaseSettings>>().Value);
+            services.AddSingleton<Data.Repositorio>();
+
             services.AddControllersWithViews();
 
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DataHuBI", Version = "v1" });
             });
-            
+
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
@@ -67,19 +73,19 @@ namespace Datahubi
                     pattern: "{controller}/{action=Index}/{id?}");
             });
 
-             app.UseSpa(spa =>
-            {
-                // To learn more about options for serving an Angular SPA from ASP.NET Core,
-                // see https://go.microsoft.com/fwlink/?linkid=864501
+            app.UseSpa(spa =>
+           {
+               // To learn more about options for serving an Angular SPA from ASP.NET Core,
+               // see https://go.microsoft.com/fwlink/?linkid=864501
 
-                spa.Options.SourcePath = "ClientApp";
+               spa.Options.SourcePath = "ClientApp";
 
-                if (env.IsDevelopment())
-                {
-                    spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
-                    // spa.UseAngularCliServer(npmScript: "start");
-                }
-            });
+               if (env.IsDevelopment())
+               {
+                   spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
+                   // spa.UseAngularCliServer(npmScript: "start");
+               }
+           });
         }
     }
 }
