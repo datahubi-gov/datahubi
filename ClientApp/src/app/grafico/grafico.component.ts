@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, Output, ViewChild } from '@angular/core';
 
 import {
   ApexAxisChartSeries,
@@ -11,7 +11,8 @@ import {
   ApexStroke,
   ApexXAxis,
   ApexFill,
-  ApexTooltip
+  ApexTooltip,
+  ChartType
 } from "ng-apexcharts";
 
 export type ChartOptions = {
@@ -34,14 +35,29 @@ export type ChartOptions = {
 })
 export class GraficoComponent implements OnInit {
 
-  // @ViewChild("chart") chart: ChartComponent;
+  //  declare type ChartType = "line" | "area" | "bar" | "histogram" | "pie" | "donut" | "radialBar" | "scatter" | "bubble" | "heatmap" | "candlestick" | "boxPlot" | "radar" | "polarArea" | "rangeBar" | "treemap";
+  @Input() public tipo: ChartType = 'bar';
+
+  @ViewChild("chart") chart: ChartComponent;
+
+
+  @Input() public set opcoes(_opcoes: Partial<ChartOptions>) {
+    setTimeout(() => {
+      this.chartOptions = _opcoes;
+    });
+
+  }
+
   public chartOptions: Partial<ChartOptions> = {
     series: [],
     chart: {
-      type: "bar"
+      type: this.tipo
     }
   };
   constructor() { }
+
+
+
 
   uniqueArrayByProperty(array, callback) {
     return array.reduce((prev, item) => {
@@ -52,71 +68,71 @@ export class GraficoComponent implements OnInit {
   }
 
   ngOnInit() {
-    setTimeout(() => {
-      this.chartOptions = {
-        series: [
-          {
-            name: "Net Profit",
-            data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
-          },
-          {
-            name: "Revenue",
-            data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
-          },
-          {
-            name: "Free Cash Flow",
-            data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
-          }
-        ],
-        chart: {
-          type: "bar",
-          height: 350
-        },
-        plotOptions: {
-          bar: {
-            horizontal: false,
-            columnWidth: "55%",
-            // endingShape: "rounded"
-          }
-        },
-        dataLabels: {
-          enabled: false
-        },
-        stroke: {
-          show: true,
-          width: 2,
-          colors: ["transparent"]
-        },
-        xaxis: {
-          categories: [
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct"
-          ]
-        },
-        yaxis: {
-          title: {
-            text: "$ (thousands)"
-          }
-        },
-        fill: {
-          opacity: 1
-        },
-        tooltip: {
-          y: {
-            formatter: function (val) {
-              return "$ " + val + " thousands";
-            }
-          }
-        }
-      };
-    }, 600);
+    // setTimeout(() => {
+    //   this.chartOptions = {
+    //     series: [
+    //       {
+    //         name: "Net Profit",
+    //         data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+    //       },
+    //       {
+    //         name: "Revenue",
+    //         data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
+    //       },
+    //       {
+    //         name: "Free Cash Flow",
+    //         data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
+    //       }
+    //     ],
+    //     chart: {
+    //       type: "bar",
+    //       height: 350
+    //     },
+    //     plotOptions: {
+    //       bar: {
+    //         horizontal: false,
+    //         columnWidth: "55%",
+    //         // endingShape: "rounded"
+    //       }
+    //     },
+    //     dataLabels: {
+    //       enabled: false
+    //     },
+    //     stroke: {
+    //       show: true,
+    //       width: 2,
+    //       colors: ["transparent"]
+    //     },
+    //     xaxis: {
+    //       categories: [
+    //         "Feb",
+    //         "Mar",
+    //         "Apr",
+    //         "May",
+    //         "Jun",
+    //         "Jul",
+    //         "Aug",
+    //         "Sep",
+    //         "Oct"
+    //       ]
+    //     },
+    //     yaxis: {
+    //       title: {
+    //         text: "$ (thousands)"
+    //       }
+    //     },
+    //     fill: {
+    //       opacity: 1
+    //     },
+    //     tooltip: {
+    //       y: {
+    //         formatter: function (val) {
+    //           return "$ " + val + " thousands";
+    //         }
+    //       }
+    //     }
+    //   };
+    // }, 600);
 
   }
 
