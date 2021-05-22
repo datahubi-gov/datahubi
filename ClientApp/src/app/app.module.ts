@@ -13,6 +13,17 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 import { GraficoComponent } from './grafico/grafico.component';
 import { EducacaoComponent } from './educacao/educacao.component';
 import { DetalhesComponent } from './detalhes/detalhes.component';
+import { ApiModule, Configuration } from './shared/sdkcore';
+import { environment } from 'src/environments/environment';
+
+export const apiConfig = new Configuration({
+  apiKeys: {},
+  basePath: environment.servidorDotnet
+});
+
+export function getApiConfig() {
+  return apiConfig;
+}
 
 @NgModule({
   declarations: [
@@ -27,6 +38,7 @@ import { DetalhesComponent } from './detalhes/detalhes.component';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+    ApiModule.forRoot(getApiConfig),
     HttpClientModule,
     FormsModule,
     NgApexchartsModule,

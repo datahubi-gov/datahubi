@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
+import { DadosService } from '../shared/sdkcore';
 
 @Component({
   selector: 'app-educacao',
@@ -13,10 +14,30 @@ export class EducacaoComponent implements OnInit {
   public PieOptions2: Partial<any> = {};
   public areaOptions: Partial<any> = {};
 
-  constructor() { }
+  public dadosCarregados: boolean = false;
+
+  constructor(
+    @Inject(DadosService) public api: DadosService
+  ) { }
 
   ngOnInit(): void {
+
+    let listaPromessa: Promise<any>[] = [];
+
+    listaPromessa.push(
+      this.api.dadosGet("educacao", "custoaluno").toPromise().then(r => {
+        console.log('custoaluno', r);
+      })
+    );
+
+    Promise.all(listaPromessa).then(() => {
+
+    });
+
     setTimeout(() => {
+      this.dadosCarregados = true;
+
+
       this.chartOptions = {
         series: [
           {
@@ -220,7 +241,8 @@ export class EducacaoComponent implements OnInit {
           }
         }
       };
-    
+
+
 
     }, 600);
   }

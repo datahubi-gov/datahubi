@@ -20,7 +20,7 @@ export class GraficoComponent implements OnInit {
   @Input() public set opcoes(_opcoes: any) {
     setTimeout(() => {
       this.chartOptions = _opcoes;
-    });
+    },600);
   }
 
   public chartOptions: any = {}
