@@ -21,7 +21,6 @@ html {
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
-  //font-weight: normal;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -142,26 +141,46 @@ code {
     a{
       display: block;
       padding: 7px 0;
-      border-radius: 3px;
       font-weight: bold;
       text-transform: uppercase;
       color: $cor-texto;
       transition: padding .2s;
       text-decoration: none;
+      position: relative;
+      font-size: 1.1em;
+
+      &:before{
+        @extend %gradiente-back-1;
+        content: ' ';
+        display: block;
+        position: absolute; z-index: 0;
+        top: 0; left: 0; bottom: 0; right: 0;
+        border-radius: 3px;
+        opacity: 0;
+        transition: opacity .2s;
+      }
 
       i{
         font-size: 1.6em;
         position: relative; top: 2px; left: -5px;
       }
 
+      p{
+        position: relative;
+        z-index: 1;
+      }
+
       &:hover{
-        @extend %gradiente-back-1;
         text-decoration: none;
         color: #fff;
         padding-left: 20px;
 
-        i{
+        i, p{
           color: #fff;
+        }
+
+        &:before{
+          opacity: 1;
         }
       }
     }
@@ -201,6 +220,7 @@ code {
   font-weight: bold;
   display: flex;
   position: relative;
+  gap: 10px;
   align-items: center;
   padding: 20px;
   overflow: hidden;

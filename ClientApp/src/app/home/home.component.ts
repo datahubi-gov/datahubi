@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { ChartOptions } from '../grafico/grafico.component';
-import { PieOptions } from '../grafico/grafico.component';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +6,8 @@ import { PieOptions } from '../grafico/grafico.component';
 })
 export class HomeComponent {
 
-  public chartOptions: Partial<ChartOptions> = {};
-  public PieOptions: Partial<PieOptions> = {};
+  public chartOptions: Partial<any> = {};
+  public PieOptions: Partial<any> = {};
 
   constructor() {
     setTimeout(() => {
@@ -82,16 +80,17 @@ export class HomeComponent {
       this.PieOptions = {
         series: [20, 80],
         chart: {
-          
           type: "pie"
         },
         legend: {
           show: false
         },
+        dataLabels: {
+          enabled: false
+        },
         labels: ["IPTU", "Outros"],
         responsive: []
       };
-  
 
     }, 1000);
 
