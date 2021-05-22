@@ -1,4 +1,6 @@
-# DataHuBI
+# DataHuBI - *Informação para tomada de decisão*
+
+![DataHuBI](ClientApp/src/assets/img/logo.svg)
 
 * Primeiro commit - 21/05/2021 - 19:18
 
