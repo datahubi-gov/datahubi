@@ -14,7 +14,7 @@ export class ImportadorComponent implements OnInit {
     @Inject(ComunicService) public comunic: ComunicService,
   ) { }
 
-  @ViewChild('file') public file: HTMLInputElement;
+  @ViewChild('file') public inputFile: HTMLInputElement;
   public hoje = Date.now();
 
   public lista: string[] = [];
@@ -48,7 +48,11 @@ export class ImportadorComponent implements OnInit {
         this.api.dadosUploadPost("educacao", "geral", this.arquivo).subscribe(() => {
           this.comunic.isCarregando(false);
           this.comunic.alerta('Arquivo enviado com sucesso');
-          this.processar();
+          this.inputFile.files = null;
+          (<HTMLInputElement>document.querySelector("#formFileLg")).value = "";
+          this.arquivo = null;
+          this.lista = [];
+          // this.processar();
           // this.comunic.navegarUrl('/educacao');
         })
       });
@@ -58,7 +62,7 @@ export class ImportadorComponent implements OnInit {
   }
 
   processar() {
-    try {      
+    try {
       this.comunic.confirmacao("Deseja realemnte processar", () => {
         this.comunic.isCarregando();
         this.api.dadosProcessarPost("educacao").subscribe(() => {

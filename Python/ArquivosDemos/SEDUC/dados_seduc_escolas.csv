@@ -1,54 +1,54 @@
 id;nome;bairro;tipo;isEspecial;capacidade
-17005582;Escola Municipal Benedito Canuto Braga;LOTEAMENTO SAO LUIZ;Escola;SIM;1060
-17005620;Escola Municipal Cabo Luzimar Machado;SETOR PONTES;Escola;NAO;1240
-17005990;Escola Municipal Professora Josefa Dias da Silva;ARAGUAINA SUL;Escola;SIM;1450
-17006244;Escola Municipal Vereador Raimundo Falcao Coelho;SETOR TIUBA;Escola;NAO;1090
-17005434;Escola Municipal Moderna Professora Maria dos Anjos Carreiro;BARROS;Escola;NAO;1090
-17005647;Escola Municipal Casemiro Ferreira Soares;SETOR URBANO;Escola;NAO;1480
-17006201;Escola Municipal Tereza Hilario Ribeiro;RAIZAL;Escola;NAO;1090
-17006210;Escola Municipal Tomaz Batista;VILA ALIANCA;Escola;NAO;670
-17041538;Escola Municipal Vereador Arnon Ferreira Leal;VILA PATROCINIO;Escola;NAO;1360
-17005531;Escola Municipal Meu Castelinho;SETOR OESTE;Escola;SIM;1240
-17005566;Escola Municipal Aurelio Buarque de Holanda;NEBLINA;Escola;NAO;1510
-17006147;Escola Municipal Sao Miguel;BARRA DA GROTA POVOADO;Escola;SIM;400
-17041481;Escola Paroquial Sao Vicente de Paulo;VILA COUTO MAGALHAES;Escola;NAO;1060
-17050510;Escola Municipal Jose Ferreira Barros;CEU AZUL;Escola;SIM;1270
-17006090;Escola Paroquial Sao Domingos;SETOR SANTA TEREZINHA;Escola;NAO;790
-17006260;Escola Municipal Zeca Barros;VILA SANTIAGO;Escola;NAO;670
-17005728;Escola Municipal Dr Cesar Belmino Evangelista;TEREZA HILARIO RIBEIRO;Escola;NAO;520
-17005744;Escola Municipal Dr Simao Lutz Kossobutzki;ARAGUAINA SUL;Escola;NAO;1540
-17053072;Escola Municipal Francisco Bueno de Freitas Pastor Fiico;MARACANA;Escola;NAO;670
-17050022;Escola Municipal Santa Luzia;SETOR SANTA LUZIA;Escola;NAO;670
-17055318;Escola Municipal Luiz Gonzaga;LOTEAMENTO COSTA ESMERALDA;Escola;SIM;1270
-17054478;Escola Municipal William Castelo Branco Martins;PARQUE SONHOS DOURADOS;Escola;SIM;1330
-17053080;Escola Municipal Domingos de Souza Lemos;JARDIM DAS FLORES;Escola;NAO;1420
-17005850;Escola Municipal Manoel Lira;NOVA ARAGUAINA;Escola;NAO;1150
-17005981;Escola Municipal Prefeito Joao de Sousa Lima;SETOR PLANALTO;Escola;NAO;1150
-17005361;Escola Municipal Joaquim de Brito Paranagua;SETOR CARAJAS;Escola;NAO;1090
-17005884;Escola Municipal Maria da Conceicao Costa Luz;JARDIM PAULISTA;Escola;NAO;940
-17006155;Escola Municipal Sao Vicente de Paula;ARAGUAINA SUL;Escola;NAO;700
-17056330;Escola Municipal Jose Gomes Sobrinho;MONTE SINAI;Escola;NAO;1060
-17005760;Escola Municipal Gentil Ferreira Brito;SETOR BRASIL;Escola;SIM;880
-17056047;Escola de Tempo Integral Joaquim Carlos Sabino dos Santos;PARQUE DO LAGO;Escola;SIM;1540
-17005825;Escola Municipal Leia Raquel Dias Mota;VILA RIBEIRO;Escola;NAO;1390
-17005949;Escola Municipal Olavo Bilac;JARDIM DAS PALMEIRAS DO NORTE;Escola;NAO;1030
-1;CEI MAria de Fatima Santos Oliveira;SETOR VILA NOVA;CEI;NAO;1330
-2;CEI - Professora Edília Moraes Soares;MARACANA;CEI;NAO;970
-3;CEI Dona Joaquina Mota;JARDIM BELO;CEI;SIM;1090
-4;Creche Municipal Constantino Pacifico de Oliveira;RAIZAL;CEI;NAO;1060
-5;CEI São José Operario;VILA CEARENSE;CEI;SIM;1180
-6;CEI - Centro Educacional Infantil;JARDIM BELO;CEI;SIM;1270
-7;CEI Dona Regina Siqueira Campos;SETOR MARTIM JORGE;CEI;NAO;730
-8;Centro Educ Infantil Mul Pedro Carreiro;MANSOES DO LAGO;CEI;NAO;940
-9;CEI Nossa Senhora dos Milagres;CAZAROTO;CEI;NAO;610
-10;Creche Mul Constantino Pacifico De Oliveira;SETOR COIMBRA;CEI;NAO;610
-11;CEI Municipal Criança Feliz;JARDIM ITATIAIA;CEI;NAO;1360
-12;Centro Educ Infantil Mul Boanice Botelho Kalil;DOM ORIONE;CEI;NAO;1300
-13;Cei Municipal Elisabeth Alves Carvalho;AEROVIARIO;CEI;NAO;1240
-14;CEI Boanice Botelho Kalil;DOM ORIONE;CEI;SIM;1480
-15;C.E.I Municipal Otaerson Souza Lima;CENTRO;CEI;SIM;1270
-16;Centro Educacional Infantil Vovô Jorge Frederico;SETOR OESTE;CEI;SIM;1060
-17;Centro Educ Infantil Mul Otaerson Souza Lima;BREJAO;CEI;NAO;1090
-18;Centro Educ Infantil Mul Natalina Maria De Jesus;LOTEAMENTO COSTA ESMERALDA;CEI;SIM;910
-19;CEI Vereador Arnon Ferreira Leal;SETOR SUL;CEI;SIM;1090
-20;Creche Municipal William Castelo Branco Martins;SETOR VILA NOVA;CEI;NAO;670
+17005582;Escola Municipal Benedito Canuto Braga;LOTEAMENTO SAO LUIZ;Escola;SIM;850
+17005620;Escola Municipal Cabo Luzimar Machado;SETOR PONTES;Escola;NAO;1510
+17005990;Escola Municipal Professora Josefa Dias da Silva;ARAGUAINA SUL;Escola;NAO;1480
+17006244;Escola Municipal Vereador Raimundo Falcao Coelho;SETOR TIUBA;Escola;NAO;1300
+17005434;Escola Municipal Moderna Professora Maria dos Anjos Carreiro;BARROS;Escola;NAO;1390
+17005647;Escola Municipal Casemiro Ferreira Soares;SETOR URBANO;Escola;NAO;1150
+17006201;Escola Municipal Tereza Hilario Ribeiro;RAIZAL;Escola;NAO;460
+17006210;Escola Municipal Tomaz Batista;VILA ALIANCA;Escola;NAO;700
+17041538;Escola Municipal Vereador Arnon Ferreira Leal;VILA PATROCINIO;Escola;SIM;1300
+17005531;Escola Municipal Meu Castelinho;SETOR OESTE;Escola;NAO;1240
+17005566;Escola Municipal Aurelio Buarque de Holanda;NEBLINA;Escola;NAO;1570
+17006147;Escola Municipal Sao Miguel;BARRA DA GROTA POVOADO;Escola;SIM;1150
+17041481;Escola Paroquial Sao Vicente de Paulo;VILA COUTO MAGALHAES;Escola;SIM;1450
+17050510;Escola Municipal Jose Ferreira Barros;CEU AZUL;Escola;NAO;490
+17006090;Escola Paroquial Sao Domingos;SETOR SANTA TEREZINHA;Escola;SIM;430
+17006260;Escola Municipal Zeca Barros;VILA SANTIAGO;Escola;SIM;670
+17005728;Escola Municipal Dr Cesar Belmino Evangelista;TEREZA HILARIO RIBEIRO;Escola;NAO;550
+17005744;Escola Municipal Dr Simao Lutz Kossobutzki;ARAGUAINA SUL;Escola;NAO;970
+17053072;Escola Municipal Francisco Bueno de Freitas Pastor Fiico;MARACANA;Escola;NAO;1540
+17050022;Escola Municipal Santa Luzia;SETOR SANTA LUZIA;Escola;NAO;1210
+17055318;Escola Municipal Luiz Gonzaga;LOTEAMENTO COSTA ESMERALDA;Escola;SIM;850
+17054478;Escola Municipal William Castelo Branco Martins;PARQUE SONHOS DOURADOS;Escola;NAO;940
+17053080;Escola Municipal Domingos de Souza Lemos;JARDIM DAS FLORES;Escola;NAO;880
+17005850;Escola Municipal Manoel Lira;NOVA ARAGUAINA;Escola;NAO;850
+17005981;Escola Municipal Prefeito Joao de Sousa Lima;SETOR PLANALTO;Escola;SIM;760
+17005361;Escola Municipal Joaquim de Brito Paranagua;SETOR CARAJAS;Escola;SIM;400
+17005884;Escola Municipal Maria da Conceicao Costa Luz;JARDIM PAULISTA;Escola;NAO;1330
+17006155;Escola Municipal Sao Vicente de Paula;ARAGUAINA SUL;Escola;SIM;1180
+17056330;Escola Municipal Jose Gomes Sobrinho;MONTE SINAI;Escola;NAO;790
+17005760;Escola Municipal Gentil Ferreira Brito;SETOR BRASIL;Escola;NAO;850
+17056047;Escola de Tempo Integral Joaquim Carlos Sabino dos Santos;PARQUE DO LAGO;Escola;NAO;1060
+17005825;Escola Municipal Leia Raquel Dias Mota;VILA RIBEIRO;Escola;SIM;940
+17005949;Escola Municipal Olavo Bilac;JARDIM DAS PALMEIRAS DO NORTE;Escola;NAO;1090
+1;CEI Maria de Fatima Santos Oliveira;DONA NELCIA;CEI;SIM;610
+2;CEI - Professora Edília Moraes Soares;ARAGUAINA SUL;CEI;NAO;640
+3;CEI Dona Joaquina Mota;JARDIM DAS PALMEIRAS;CEI;NAO;700
+4;Creche Municipal Constantino Pacifico de Oliveira;BARRA DA GROTA POVOADO;CEI;NAO;760
+5;CEI São José Operario;JARDIM ITATIAIA;CEI;SIM;1090
+6;CEI - Centro Educacional Infantil;VILA AZUL;CEI;NAO;520
+7;CEI Dona Regina Siqueira Campos;CAMPUS UNIVERSITARIO;CEI;NAO;1180
+8;Centro Educ Infantil Mul Pedro Carreiro;DONA NELCIA;CEI;NAO;1300
+9;CEI Nossa Senhora dos Milagres;MORADA DO SOL;CEI;NAO;1540
+10;Creche Mul Constantino Pacifico De Oliveira;NEBLINA;CEI;NAO;430
+11;CEI Municipal Criança Feliz;SAO MIGUEL;CEI;NAO;700
+12;Centro Educ Infantil Mul Boanice Botelho Kalil;ENTROCAMENTO;CEI;NAO;430
+13;Cei Municipal Elisabeth Alves Carvalho;BARRA DA GROTA FAZENDA;CEI;SIM;790
+14;CEI Boanice Botelho Kalil;JARDIM SANTA MONICA;CEI;SIM;1360
+15;C.E.I Municipal Otaerson Souza Lima;RESIDENCIAL PRESIDENTE LULA;CEI;NAO;490
+16;Centro Educacional Infantil Vovô Jorge Frederico;JD. MONACO;CEI;NAO;460
+17;Centro Educ Infantil Mul Otaerson Souza Lima;SETOR SANTA TEREZINHA;CEI;NAO;910
+18;Centro Educ Infantil Mul Natalina Maria De Jesus;ENTROCAMENTO;CEI;NAO;850
+19;CEI Vereador Arnon Ferreira Leal;SETOR UNIVERSITARIO;CEI;SIM;640
+20;Creche Municipal William Castelo Branco Martins;TEC NORTE;CEI;NAO;730
