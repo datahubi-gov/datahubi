@@ -8,7 +8,7 @@ escolas = escolas.set_index('id')
 
 
 
-ceis_nome = ["CEI MAria de Fatima Santos Oliveira", "CEI - Professora Edília Moraes Soares", "CEI Dona Joaquina Mota", "Creche Municipal Constantino Pacifico de Oliveira", "CEI São José Operario", "CEI - Centro Educacional Infantil", "CEI Dona Regina Siqueira Campos", "Centro Educ Infantil Mul Pedro Carreiro", "CEI Nossa Senhora dos Milagres", "Creche Mul Constantino Pacifico De Oliveira", "CEI Municipal Criança Feliz", "Centro Educ Infantil Mul Boanice Botelho Kalil", "Cei Municipal Elisabeth Alves Carvalho", "CEI Boanice Botelho Kalil", "C.E.I Municipal Otaerson Souza Lima", "Centro Educacional Infantil Vovô Jorge Frederico", "Centro Educ Infantil Mul Otaerson Souza Lima", "Centro Educ Infantil Mul Natalina Maria De Jesus", "CEI Vereador Arnon Ferreira Leal", "Creche Municipal William Castelo Branco Martins"]
+ceis_nome = ["CEI Maria de Fatima Santos Oliveira", "CEI - Professora Edília Moraes Soares", "CEI Dona Joaquina Mota", "Creche Municipal Constantino Pacifico de Oliveira", "CEI São José Operario", "CEI - Centro Educacional Infantil", "CEI Dona Regina Siqueira Campos", "Centro Educ Infantil Mul Pedro Carreiro", "CEI Nossa Senhora dos Milagres", "Creche Mul Constantino Pacifico De Oliveira", "CEI Municipal Criança Feliz", "Centro Educ Infantil Mul Boanice Botelho Kalil", "Cei Municipal Elisabeth Alves Carvalho", "CEI Boanice Botelho Kalil", "C.E.I Municipal Otaerson Souza Lima", "Centro Educacional Infantil Vovô Jorge Frederico", "Centro Educ Infantil Mul Otaerson Souza Lima", "Centro Educ Infantil Mul Natalina Maria De Jesus", "CEI Vereador Arnon Ferreira Leal", "Creche Municipal William Castelo Branco Martins"]
 
 import geopandas as gpd
 import fiona

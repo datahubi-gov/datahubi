@@ -79,8 +79,9 @@ namespace Datahubi.Controllers
         {
             DateTime inicio = DateTime.Now;
             Process process = new Process();
+            string arquivo = Path.Combine(_environment.ContentRootPath + @"\Python\scripts\", area + ".py") + " testeParam";
             process.StartInfo.FileName = "py"; //Executável do python
-            process.StartInfo.Arguments = Path.Combine(_environment.WebRootPath + $@"\..\Python\scripts\", area + ".py");
+            process.StartInfo.Arguments = arquivo;
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.RedirectStandardError = true; //Pega saída de erros
             process.StartInfo.RedirectStandardOutput = true; //Pega a saída        
@@ -94,7 +95,7 @@ namespace Datahubi.Controllers
             process.WaitForExit();
             process.Close();
 
-            return Ok(new { saida = output, inicio = inicio, fim = DateTime.Now });
+            return Ok(new { arquivo = arquivo, saida = output, inicio = inicio, fim = DateTime.Now });
         }
 
         private string PreparaDiretorio(string diretorio, IWebHostEnvironment _environment)

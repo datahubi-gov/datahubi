@@ -1,5 +1,8 @@
-src_base = '../dados/educacao'
-dst_base = '../dadosprocessados/educacao'
+import os
+dirname = os.path.dirname(__file__)
+
+src_base = os.path.join(dirname,'../dados/educacao')
+dst_base = os.path.join(dirname,'../dadosprocessados/educacao')
 
 salvar = True
 
@@ -7,6 +10,9 @@ src_escolas = f'{src_base}/dados_seduc_escolas.csv'
 src_despesas = f'{src_base}/dados_seduc_despesas.csv'
 src_discentes = f'{src_base}/dados_seduc_discentes.csv'
 src_doscentes = f'{src_base}/dados_seduc_doscentes.csv'
+
+from datetime import datetime
+print('Iniciado', datetime.now())
 
 # from bairrosgeo import bairros
 import pandas as pd
@@ -16,6 +22,8 @@ professores = pd.read_csv(src_discentes,sep=";")
 escolas = pd.read_csv(src_escolas,sep=";")
 
 despesas = pd.read_csv(src_despesas,sep=";")
+
+
 
 
 
@@ -101,13 +109,11 @@ al = al[['id']]
 al.columns = ['alunos']
 al = al.reset_index()
 
-# print(al.head())
-
-
 esc = pd.merge(escolas,prof,how='left',left_on='id',right_on='escola').drop(columns=['escola'])
 esc = pd.merge(esc,al,how='left',left_on='id',right_on='escola').drop(columns=['escola'])
-print(esc.head())
+
 
 if(salvar):
     esc.to_json(f'{dst_base}/escolas.json',orient="records")
 
+print('Finalizado', datetime.now())
