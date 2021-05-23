@@ -11,7 +11,7 @@
 <div class="separador"></div>
 
 <div class="pesquisa-filtros">
-    <input type="text" placeholder="O que você está procurando?">
+    <input type="text" [(ngModel)]="textoDePesquisaTemp" placeholder="O que você está procurando?" (input)="aplicarFiltros()">
     <button type="submit">
         <i class="las la-search"></i> Pesquisar
     </button>
@@ -22,37 +22,37 @@
 <div class="lista-grid">
     <div class="lista-grid-item lista-grid-item-titulo">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" (click)="mudarOrdem('nome')">
                 <p>Nome da escola</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2" (click)="mudarOrdem('alunos')">
                 <p><i class="las la-user-graduate"></i> Alunos</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2" (click)="mudarOrdem('efetivo')">
                 <p><i class="las la-chalkboard-teacher"></i> Professores</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2" (click)="mudarOrdem('efetivo')">
                 <p><i class="las la-user-cog"></i> Administrativo</p>
             </div>
         </div>
     </div>
-    <div class="lista-grid-item">
+    <div *ngFor="let item of listaFiltrada" class="lista-grid-item">
         <div class="row">
             <div class="col-md-6">
-                <p>Escola Modelo</p>
+                <p>{{item?.nome}}</p>
             </div>
             <div class="col-md-2">
-                <p>48</p>
+                <p>{{item?.alunos}}</p>
             </div>
             <div class="col-md-2">
-                <p>1200</p>
+                <p>{{item?.efetivo + item?.contrato}}</p>
             </div>
             <div class="col-md-2">
-                <p>17</p>
+                <p>{{ item?.efetivo * 0.7 | number:'1.0-0' }}</p>
             </div>
         </div>
     </div>
-    <div class="lista-grid-item">
+    <!-- <div class="lista-grid-item">
         <div class="row">
             <div class="col-md-6">
                 <p>Alfrado Nasser</p>
@@ -83,5 +83,5 @@
                 <p>13</p>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
