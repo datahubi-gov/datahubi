@@ -10,19 +10,19 @@ declare global {
 
 declare var listaGeral: any[];
 
-window.Apex = {
-  chart: {
-    toolbar: {
-      show: false
-    }
-  },
-  tooltip: {
-    shared: false
-  },
-  legend: {
-    show: false
-  }
-};
+// window.Apex = {
+//   chart: {
+//     toolbar: {
+//       show: false
+//     }
+//   },
+//   tooltip: {
+//     shared: false
+//   },
+//   legend: {
+//     show: false
+//   }
+// };
 
 @Component({
   selector: 'app-home',
@@ -46,7 +46,7 @@ export class HomeComponent implements OnInit {
     @Inject(DadosService) public api: DadosService,
     @Inject(ComunicService) public comunic: ComunicService,
   ) {
-   
+
   }
 
   ngOnInit() {
@@ -236,11 +236,14 @@ export class HomeComponent implements OnInit {
             height: 400,
             width: "100%",
             type: "bar",
+            toolbar: {
+              show: false
+            },
             events: {
               dataPointSelection: (e, chart, opts) => {
                 var quarterChartEl = document.querySelector("#chart-quarter");
                 var yearChartEl = document.querySelector("#chart-year");
-    
+
                 if (opts.selectedDataPoints[0].length === 1) {
                   if (quarterChartEl.classList.contains("active")) {
                     this.updateQuarterChart(chart, "barQuarter");
@@ -252,7 +255,7 @@ export class HomeComponent implements OnInit {
                 } else {
                   this.updateQuarterChart(chart, "barQuarter");
                 }
-    
+
                 if (opts.selectedDataPoints[0].length === 0) {
                   yearChartEl.classList.remove("chart-quarter-activated");
                   quarterChartEl.classList.remove("active");
@@ -262,6 +265,9 @@ export class HomeComponent implements OnInit {
                 this.updateQuarterChart(chart, "barQuarter");
               }
             }
+          },          
+          legend: {
+            show: false
           },
           plotOptions: {
             bar: {
@@ -287,9 +293,9 @@ export class HomeComponent implements OnInit {
               enabled: true
             }
           },
-    
+
           colors: this.colors,
-    
+
           states: {
             normal: {
               filter: {
@@ -305,6 +311,7 @@ export class HomeComponent implements OnInit {
             }
           },
           tooltip: {
+            shared: false,
             x: {
               show: false
             },
@@ -330,7 +337,7 @@ export class HomeComponent implements OnInit {
             }
           }
         };
-    
+
         this.chartQuarterOptions = {
           series: [
             {
@@ -409,15 +416,15 @@ export class HomeComponent implements OnInit {
     "#FF4560",
     "#775DD0",
     "#00D9E9",
-    "#FF66C3",'#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
+    "#FF66C3", '#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
     '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
-    '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
+    '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A',
     '#FF99E6', '#CCFF1A', '#FF1A66', '#E6331A', '#33FFCC',
-    '#66994D', '#B366CC', '#4D8000', '#B33300', '#CC80CC', 
+    '#66994D', '#B366CC', '#4D8000', '#B33300', '#CC80CC',
     '#66664D', '#991AFF', '#E666FF', '#4DB3FF', '#1AB399',
-    '#E666B3', '#33991A', '#CC9999', '#B3B31A', '#00E680', 
+    '#E666B3', '#33991A', '#CC9999', '#B3B31A', '#00E680',
     '#4D8066', '#809980', '#E6FF80', '#1AFF33', '#999933',
-    '#FF3380', '#CCCC00', '#66E64D', '#4D80CC', '#9900B3', 
+    '#FF3380', '#CCCC00', '#66E64D', '#4D80CC', '#9900B3',
     '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'
   ];
 
@@ -634,12 +641,12 @@ export class HomeComponent implements OnInit {
   public montarData(lista: any[]): any {
     let anos = this.comunic.uniqueArrayByProperty(lista, (x) => x.ano);
     let dados: any[] = [];
-    anos.forEach((ano: any,index: string | number) => {
+    anos.forEach((ano: any, index: string | number) => {
       dados.push({
         x: `${ano}`,
-        y: lista.filter(x=>x.ano == ano).map((x)=>{return x.IPTU_SIM + x.ISS_SIM + x.LIXO_SIM + x.MULTA_SIM + x.TAXAS_SIM}).reduce((a, b) => a + b),
+        y: lista.filter(x => x.ano == ano).map((x) => { return x.IPTU_SIM + x.ISS_SIM + x.LIXO_SIM + x.MULTA_SIM + x.TAXAS_SIM }).reduce((a, b) => a + b),
         color: this.colors[index],
-        quarters: lista.filter(x=>x.ano == ano).map(x=>{return {x:x.mes,y:x.IPTU_SIM + x.ISS_SIM + x.LIXO_SIM + x.MULTA_SIM + x.TAXAS_SIM}})
+        quarters: lista.filter(x => x.ano == ano).map(x => { return { x: x.mes, y: x.IPTU_SIM + x.ISS_SIM + x.LIXO_SIM + x.MULTA_SIM + x.TAXAS_SIM } })
       });
     });
     return dados;
