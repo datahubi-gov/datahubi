@@ -8,11 +8,11 @@
   </div>
 </div>
 
+<div class="separador"></div>
+
 <div class="row">
   <div class="col-md-6">
-    <div class="separador"></div>
-
-    <h4 class="m-0">Realização do orçamento</h4>
+    <h5 class="m-2">Realização do orçamento</h5>
     <p class="valor-destaque">
       {{valorPrevisto | currency}}
     </p>
@@ -20,13 +20,14 @@
     <div class="separador-0"></div>
 
     <div class="barra-horizontal">
-      <div title="Arrecadado: {{valorArrecadado | currency}}" [style.width]="((valorArrecadado/valorPrevisto)*100).toFixed(0) +'%'" class="barra-horizontal-completada">
+      <div title="Arrecadado: {{valorArrecadado | currency}}"
+        [style.width]="((valorArrecadado/valorPrevisto)*100).toFixed(0) +'%'" class="barra-horizontal-completada">
         {{valorArrecadado | currency}}
       </div>
     </div>
-
-    <div class="separador-0"></div>
-
+  </div>
+  <div class="col-md-6">
+    <h5 class="m-2">Recebimento por receita</h5>
     <div class="row">
       <div class="col-md-3">
         <grafico *ngIf="dadosCarregados" [opcoes]="iptuPie" tipo="pie"></grafico>
@@ -45,25 +46,35 @@
         <p class="text-center fw-bold"><i class="las la-tags"></i> Convênios</p>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="separador"></div>
+<div class="separador"></div>
 
+<div class="row">
+  <div class="col-md-6">
+    <h5 class="mb-3">Receitas em 2020</h5>
     <div>
       <grafico *ngIf="dadosCarregados" [opcoes]="comparativoMensal" tipo="bar"></grafico>
     </div>
-
   </div>
   <div class="col-md-6">
-    <div id="wrap">
-      <div id="chart-year">
+    <h5 class="mb-4">Arrecadação por ano</h5>
+    <div id="wrap" style="overflow: hidden;">
+      <div id="chart-year" class="chart-quarter-activated">
         <grafico *ngIf="dadosCarregados" [opcoes]="chartOptions" tipo="bar"></grafico>
       </div>
-      <div id="chart-quarter">
+      <div id="chart-quarter" class="active">
         <grafico *ngIf="dadosCarregados" [opcoes]="chartQuarterOptions" tipo="bar"></grafico>
       </div>
     </div>
-    <div>
-      <img src="imagens/mapa_fazenda.svg" alt="">
-    </div>
   </div>
+
+</div>
+
+<div class="separador"></div>
+
+<h5 class="m-0">Bairros que mais arrecadam</h5>
+<div>
+  <img src="imagens/mapa_fazenda.svg" alt="">
 </div>
