@@ -311,6 +311,8 @@ input[type=text]{
 .barra-horizontal-completada{
   @extend %gradiente-back-1;
   width: 80%; height: 100%;
+  color: #fff; font-weight: bold;
+  padding: 5px 0 0 10px;
 }
 
 .botao-importacao{

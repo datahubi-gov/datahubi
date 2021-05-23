@@ -14,13 +14,14 @@
 
     <h4 class="m-0">Realização do orçamento</h4>
     <p class="valor-destaque">
-      R$ 550.854.548,50
+      {{valorPrevisto | currency}}
     </p>
 
     <div class="separador-0"></div>
 
     <div class="barra-horizontal">
-      <div class="barra-horizontal-completada">
+      <div title="Arrecadado: {{valorArrecadado | currency}}" [style.width]="((valorArrecadado/valorPrevisto)*100).toFixed(0) +'%'" class="barra-horizontal-completada">
+        {{valorArrecadado | currency}}
       </div>
     </div>
 
@@ -28,27 +29,27 @@
 
     <div class="row">
       <div class="col-md-3">
-        <grafico [opcoes]="PieOptions" tipo="pie"></grafico>
+        <grafico *ngIf="dadosCarregados" [opcoes]="iptuPie" tipo="pie"></grafico>
         <p class="text-center fw-bold"><i class="las la-tags"></i> IPTU</p>
       </div>
       <div class="col-md-3">
-        <grafico [opcoes]="PieOptions" tipo="pie"></grafico>
+        <grafico *ngIf="dadosCarregados" [opcoes]="lixoPie" tipo="pie"></grafico>
         <p class="text-center fw-bold"><i class="las la-tags"></i> Taxa de lixo</p>
       </div>
       <div class="col-md-3">
-        <grafico [opcoes]="PieOptions" tipo="pie"></grafico>
+        <grafico *ngIf="dadosCarregados" [opcoes]="issPie" tipo="pie"></grafico>
         <p class="text-center fw-bold"><i class="las la-tags"></i> IIS</p>
       </div>
       <div class="col-md-3">
-        <grafico [opcoes]="PieOptions" tipo="pie"></grafico>
-        <p class="text-center fw-bold"><i class="las la-tags"></i> Recursos</p>
+        <grafico *ngIf="dadosCarregados" [opcoes]="diversosPie" tipo="pie"></grafico>
+        <p class="text-center fw-bold"><i class="las la-tags"></i> Convênios</p>
       </div>
     </div>
 
     <div class="separador"></div>
 
     <div>
-      <grafico [opcoes]="chartOptions" tipo="bar"></grafico>
+      <grafico *ngIf="dadosCarregados" [opcoes]="comparativoMensal" tipo="bar"></grafico>
     </div>
   </div>
   <div class="col-md-6">
