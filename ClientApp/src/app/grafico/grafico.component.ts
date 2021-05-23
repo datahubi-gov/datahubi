@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, Output, ViewChild } from '@angular/core';
+import * as ApexCharts from 'apexcharts';
 
 import {
   ChartComponent,
