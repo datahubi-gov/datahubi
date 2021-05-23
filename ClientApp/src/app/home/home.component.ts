@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
 
     listaPromessa.push(
       this.api.dadosGet("fazenda", "totais").toPromise().then((r: any[]) => {
-        console.log('totais', r);
+        // console.log('totais', r);
         // Indicadores Totalizadores
         let item = r.find(x => x.indicador == 'receita_prevista');
         if (item) this.valorPrevisto = item.valor;
@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit {
 
         let iptu_previsao = r.find(x => x.indicador == 'iptu_previsao');
         let iptu_recebida = r.find(x => x.indicador == 'iptu_recebida');
-        let iptu = parseFloat((( iptu_previsao.valor/iptu_recebida.valor) * 100).toFixed(0));
+        let iptu = parseFloat(((iptu_previsao.valor / iptu_recebida.valor) * 100).toFixed(0));
         this.iptuPie = {
           series: [iptu, 100 - iptu],
           chart: {
@@ -64,7 +64,7 @@ export class HomeComponent implements OnInit {
 
         let lixo_previsao = r.find(x => x.indicador == 'lixo_previsao');
         let lixo_recebida = r.find(x => x.indicador == 'lixo_recebida');
-        let lixo = parseFloat((( lixo_previsao.valor/lixo_recebida.valor) * 100).toFixed(0));
+        let lixo = parseFloat(((lixo_previsao.valor / lixo_recebida.valor) * 100).toFixed(0));
         this.lixoPie = {
           series: [lixo, 100 - lixo],
           chart: {
@@ -83,10 +83,10 @@ export class HomeComponent implements OnInit {
         // *********************************************
         // *********** ISS *****************************
         // *********************************************
-        
+
         let iss_previsao = r.find(x => x.indicador == 'iss_previsao');
         let iss_recebida = r.find(x => x.indicador == 'iss_recebida');
-        let iss = parseFloat((( iss_previsao.valor/iss_recebida.valor) * 100).toFixed(0));
+        let iss = parseFloat(((iss_previsao.valor / iss_recebida.valor) * 100).toFixed(0));
         this.issPie = {
           series: [iss, 100 - iss],
           chart: {
@@ -105,10 +105,10 @@ export class HomeComponent implements OnInit {
         // *********************************************
         // *********** Convênios ***********************
         // *********************************************
-        
+
         let convenios_previsao = r.find(x => x.indicador == 'convenios_previsao');
         let convenios_recebida = r.find(x => x.indicador == 'convenios_recebida');
-        let diversos = parseFloat((( convenios_previsao.valor/convenios_recebida.valor) * 100).toFixed(0));
+        let diversos = parseFloat(((convenios_previsao.valor / convenios_recebida.valor) * 100).toFixed(0));
         this.diversosPie = {
           series: [diversos, 100 - diversos],
           chart: {
@@ -123,6 +123,77 @@ export class HomeComponent implements OnInit {
           labels: ["Arrecadado", "Pendente"],
           responsive: []
         };
+
+
+        // *********************************************
+        // *********** Barras - Comparativo  ***********
+        // *********************************************
+
+        listaPromessa.push(
+          this.api.dadosGet("fazenda", "lancamentos").toPromise().then((r: any[]) => {
+            r = r.filter(x => x.ano == 2020);
+            console.log('lancamentos', r);
+
+
+            this.comparativoMensal = {
+              series: [
+                {
+                  name: "IPTU",
+                  data: r.map(x => parseFloat(parseFloat(x.IPTU_SIM).toFixed(0)))
+                },
+                {
+                  name: "ISS",
+                  data: r.map(x => parseFloat(parseFloat(x.ISS_SIM).toFixed(0)))
+                },
+                {
+                  name: "Lixo",
+                  data: r.map(x => parseFloat(parseFloat(x.LIXO_SIM).toFixed(0)))
+                },
+                {
+                  name: "Taxas",
+                  data: r.map(x => parseFloat(parseFloat(x.TAXAS_SIM).toFixed(0)))
+                }
+              ],
+              chart: {
+                type: "bar",
+                height: 350
+              },
+              plotOptions: {
+                bar: {
+                  horizontal: false,
+                  columnWidth: "55%",
+                  // endingShape: "rounded"
+                }
+              },
+              dataLabels: {
+                enabled: false
+              },
+              stroke: {
+                show: true,
+                width: 2,
+                colors: ["transparent"]
+              },
+              xaxis: {
+                categories: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+              },
+              yaxis: {
+                title: {
+                  text: "Arrecadação"
+                }
+              },
+              fill: {
+                opacity: 1
+              },
+              tooltip: {
+                y: {
+                  formatter: function (val) {
+                    return "R$ " + val;
+                  }
+                }
+              }
+            };
+          })
+        );
 
       }));
 
