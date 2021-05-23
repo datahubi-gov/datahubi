@@ -28,7 +28,7 @@ bairros.loc[bairros["bairro"]=='SETOR ANHANGUERA','peso'] =0.05
 bairros.loc[bairros["bairro"]=='JORGE IUNES','peso'] =0.0501
 
 # Montar a lista fake
-qtd = 50000 #Quantidade de Registros
+qtd = 120000 #Quantidade de Registros
 data_inicial = datetime.date(2020, 1, 1)
 data_final = datetime.date(2020, 12, 31)
 lista_tipos = ['IPTU','ISS','LIXO','MULTA', 'TAXAS']

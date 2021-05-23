@@ -1,0 +1,450 @@
+"Código";"Descrição";"Previsto";"Arrecadado no período";"No mês Final";"Realizado(%)"
+"1";"RECEITAS CORRENTES";"522.715.743,64";"65.028.010,45";"535.430.043,27";"102,43"
+"11";"Impostos, Taxas e Contribuições de Melhoria";"97.367.500,00";"12.301.477,47";"91.566.822,86";"94,04"
+"111";"IMPOSTOS";"80.725.000,00";"10.705.492,99";"73.845.540,73";"91,48"
+"1113";"Impostos sobre a Renda e Proventos de Qualquer Natureza";"14.800.000,00";"4.987.619,55";"18.141.189,11";"122,58"
+"111303";"Imposto sobre a Renda - Retido na Fonte";"14.800.000,00";"4.987.619,55";"18.141.189,11";"122,58"
+"1113031";"Imposto sobre a Renda - Retido na Fonte - Trabalho";"14.800.000,00";"4.987.619,55";"18.141.189,11";"122,58"
+"11130311";"Imposto sobre a Renda - Retido na Fonte - Trabalho - Principal";"14.800.000,00";"4.987.619,55";"18.141.189,11";"122,58"
+"1113031101";"IRRF SOBRE RENDIMENTOS DO TRABALHO - ATIVOS/INATIVOS";"13.000.000,00";"3.097.722,87";"15.523.547,43";"119,41"
+"111303110101";"IRRF - ATIVO/INATIVO- PRÓPRIO";"7.800.000,00";"1.858.634,98";"8.558.692,84";"109,73"
+"111303110102";"IRRF - ATIVO/INATIVO- MDE";"3.250.000,00";"774.430,17";"3.566.117,04";"109,73"
+"111303110103";"IRRF - ATIVO/INATIVO- ASPS";"1.950.000,00";"464.657,72";"2.139.668,58";"109,73"
+"111303110104";"IRRF - INATIVOS PAGOS PELO RPPS - PRÓPRIO";0;0;"755.441,39";0
+"111303110105";"IRRF - INATIVOS PAGOS PELO RPPS - MDE";0;0;"314.767,24";0
+"111303110106";"IRRF - INATIVOS PAGOS PELO RPPS - ASPS";0;0;"188.860,34";0
+"1113031102";"IRRF SOBRE RENDIMENTOS - PRESTAÇÃO DE SERVIÇOS DE TERCEIROS - Principal";"1.800.000,00";"1.889.896,68";"2.617.641,68";"145,42"
+"111303110201";"IRRF - PRESTAÇÃO DE SERVIÇOS DE TERCEIROS -  PRÓPRIO";"1.080.000,00";"1.133.938,18";"1.570.586,18";"145,42"
+"111303110202";"IRRF - PRESTAÇÃO DE SERVIÇOS DE TERCEIROS - MDE";"450.000,00";"472.474,11";"654.409,93";"145,42"
+"111303110203";"IRRF - PRESTAÇÃO DE SERVIÇOS DE TERCEIROS - ASPS";"270.000,00";"283.484,39";"392.645,57";"145,42"
+"1118";"Impostos Específicos de Estados/DF Municípios";"65.925.000,00";"5.717.873,44";"55.704.351,62";"84,50"
+"111801";"Impostos sobre o Patrimônio para Estados/DF/Municípios";"34.365.000,00";"2.571.898,68";"21.220.971,61";"61,75"
+"1118011";"Imposto sobre a Propriedade Predial e Territorial Urbana";"30.000.000,00";"1.952.756,49";"16.881.626,38";"56,27"
+"11180111";"Imposto sobre a Propriedade Predial e Territorial Urbana - Principal";"23.000.000,00";"1.103.738,22";"10.014.813,57";"43,54"
+"1118011101";"IPTU - PRÓPRIO";"13.800.000,00";"662.491,57";"6.074.835,03";"44,02"
+"1118011102";"IPTU - MDE";"5.750.000,00";"275.778,99";"2.462.485,25";"42,83"
+"1118011103";"IPTU - ASPS";"3.450.000,00";"165.467,66";"1.477.493,29";"42,83"
+"11180112";"Imposto sobre a Propriedade Predial e Territorial Urbana - Multas e Juros";"1.400.000,00";"337.523,16";"2.128.339,06";"152,02"
+"1118011201";"IPTU - MULTAS E JUROS DE MORA - PRÓPRIO";"840.000,00";"202.513,82";"1.277.002,50";"152,02"
+"1118011202";"IPTU - MULTAS E JUROS DE MORA -  MDE";"350.000,00";"84.380,73";"532.083,80";"152,02"
+"1118011203";"IPTU - MULTAS E JUROS DE MORA - ASPS";"210.000,00";"50.628,61";"319.252,76";"152,03"
+"11180113";"Imposto sobre a Propriedade Predial e Territorial Urbana - Dívida Ativa";"3.600.000,00";"269.378,13";"2.771.695,83";"76,99"
+"1118011301";"IPTU - DÍVIDA ATIVA - PRÓPRIO";"2.160.000,00";"161.626,78";"1.663.016,37";"76,99"
+"1118011302";"IPTU - DÍVIDA ATIVA - MDE";"900.000,00";"67.344,39";"692.922,40";"76,99"
+"1118011303";"IPTU - DÍVIDA ATIVA - ASPS";"540.000,00";"40.406,96";"415.757,06";"76,99"
+"11180114";"Imposto sobre a Propriedade Predial e Territorial Urbana - Dívida Ativa - Multas e Juros";"2.000.000,00";"242.116,98";"1.966.777,92";"98,34"
+"1118011401";"IPTU - MULTAS E JUROS DE MORA DA DÍVIDA ATIVA - PRÓPRIO";"1.200.000,00";"145.270,10";"1.180.065,81";"98,34"
+"1118011402";"IPTU - MULTAS E JUROS DE MORA DA DÍVIDA ATIVA - MDE";"500.000,00";"60.529,18";"491.693,51";"98,34"
+"1118011403";"IPTU - MULTAS E JUROS DE MORA DA DÍVIDA ATIVA - ASPS";"300.000,00";"36.317,70";"295.018,60";"98,34"
+"1118014";"Imposto sobre Transmissão Inter Vivos de Bens Imóveis e de Direitos Reais sobre Imóveis";"4.365.000,00";"619.142,19";"4.339.345,23";"99,41"
+"11180141";"Imposto sobre Transmissão Inter Vivos de Bens Imóveis e de Direitos Reais sobre Imóveis - Principal";"4.365.000,00";"619.142,19";"4.339.345,23";"99,41"
+"1118014101";"ITBI - PRÓPRIO";"2.619.000,00";"371.485,24";"2.603.606,22";"99,41"
+"1118014102";"ITBI - MDE";"1.091.250,00";"154.785,47";"1.084.835,52";"99,41"
+"1118014103";"ITBI - ASPS";"654.750,00";"92.871,48";"650.903,49";"99,41"
+"111802";"Impostos sobre a Produção, Circulação de Mercadorias e Serviços";"31.560.000,00";"3.145.974,76";"34.483.380,01";"109,26"
+"1118023";"Imposto sobre Serviços de Qualquer Natureza";"31.560.000,00";"3.145.974,76";"34.483.380,01";"109,26"
+"11180231";"Imposto sobre Serviços de Qualquer Natureza - Principal";"27.460.000,00";"3.116.158,92";"30.698.445,70";"111,79"
+"1118023101";"ISS - PRÓPRIO";"15.900.000,00";"1.869.696,26";"18.419.071,95";"115,84"
+"1118023102";"ISS - MDE";"7.225.000,00";"779.038,21";"7.674.598,00";"106,22"
+"1118023103";"ISS - ASPS";"4.335.000,00";"467.424,45";"4.604.775,75";"106,22"
+"11180232";"Imposto sobre Serviços de Qualquer Natureza - Multas e Juros";"400.000,00";"14.874,89";"110.021,55";"27,51"
+"1118023201";"ISS - MULTAS E JUROS DE MORA - PRÓPRIO";"240.000,00";"8.924,83";"66.011,96";"27,50"
+"1118023202";"ISS - MULTAS E JUROS DE MORA - MDE";"100.000,00";"3.718,61";"27.504,52";"27,50"
+"1118023203";"ISS - MULTAS E JUROS DE MORA - ASPS";"60.000,00";"2.231,45";"16.505,07";"27,51"
+"11180233";"Imposto sobre Serviços de Qualquer Natureza - Dívida Ativa";"2.500.000,00";"10.420,27";"3.658.889,08";"146,36"
+"1118023301";"ISS - DÍVIDA ATIVA - PRÓPRIO";"1.500.000,00";"6.252,13";"2.195.333,34";"146,36"
+"1118023302";"ISS - DÍVIDA ATIVA - MDE";"625.000,00";"2.604,99";"914.721,82";"146,36"
+"1118023303";"ISS - DÍVIDA ATIVA - ASPS";"375.000,00";"1.563,15";"548.833,92";"146,36"
+"11180234";"Imposto sobre Serviços de Qualquer Natureza - Dívida Ativa - Multas e Juros";"1.200.000,00";"4.520,68";"16.023,68";"1,34"
+"1118023401";"ISS - MULTAS E JUROS DE MORA DA DÍVIDA ATIVA - PRÓPRIO";"720.000,00";"2.712,36";"9.613,81";"1,34"
+"1118023402";"ISS - MULTAS E JUROS DE MORA DA DÍVIDA ATIVA - MDE";"300.000,00";"1.130,12";"4.005,58";"1,34"
+"1118023403";"ISS - MULTAS E JUROS DE MORA DA DÍVIDA ATIVA - ASPS";"180.000,00";"678,20";"2.404,29";"1,34"
+"112";"TAXAS";"16.642.500,00";"1.595.984,48";"17.721.282,13";"106,48"
+"1121";"TAXAS";"222.000,00";"23.421,79";"240.073,47";"108,14"
+"112101";"Taxas de Inspeção, Controle e Fiscalização";"60.000,00";"232,11";"9.711,24";"16,19"
+"1121011";"Taxas de Inspeção, Controle e Fiscalização";"60.000,00";"232,11";"9.711,24";"16,19"
+"11210111";"Taxas de Inspeção, Controle e Fiscalização - Principal";"60.000,00";0;0;0
+"11210113";"Taxas de Inspeção, Controle e Fiscalização - Dívida Ativa";0;"232,11";"9.711,24";0
+"112104";"Taxa de Controle e Fiscalização Ambiental";"162.000,00";"23.189,68";"230.362,23";"142,20"
+"1121041";"Taxa de Controle e Fiscalização Ambiental";"162.000,00";"23.189,68";"230.362,23";"142,20"
+"11210411";"Taxa de Controle e Fiscalização Ambiental - Principal";"162.000,00";"23.189,68";"230.362,23";"142,20"
+"1121041101";"Taxa de Controle e Fiscalização Ambiental - Principal";"162.000,00";"23.189,68";"230.362,23";"142,20"
+"1122";"Taxas pela Prestação de Serviços";"11.660.975,00";"1.382.708,37";"13.537.542,38";"116,09"
+"112201";"Taxas pela Prestação de Serviços";"11.660.975,00";"1.382.708,37";"13.537.542,38";"116,09"
+"1122011";"Taxas pela Prestação de Serviços";"11.660.975,00";"1.382.708,37";"13.537.542,38";"116,09"
+"11220111";"Taxas pela Prestação de Serviços - Principal";"11.566.975,00";"1.193.162,26";"12.249.687,80";"105,90"
+"1122011101";"Taxa de Cemitérios";"80.000,00";"12.418,50";"87.189,24";"108,99"
+"1122011103";"TAXAS DE SERVIÇOS CADASTRAIS";"42.900,00";"3.852,44";"44.036,76";"102,65"
+"1122011107";"TAXA DE EMISSÃO DE CERTIDÕES";"53.000,00";"158,79";"4.866,42";"9,18"
+"1122011108";"TAXA DE ÁGUA SOBRE TERRENOS BALDIOS";"2.000,00";0;0;0
+"1122011110";"TAXA DE COLETA DE LIXO";"2.328.000,00";"464.196,76";"5.295.479,91";"227,47"
+"1122011199";"Outras Taxas pela Prestação de Serviços";"9.061.075,00";"712.535,77";"6.818.115,47";"75,25"
+"11220112";"Taxas pela Prestação de Serviços -Multas e Juros de Mora";"42.000,00";"156.548,94";"888.241,64";"2.114,86"
+"1122011201";"Taxas pela Prestação de Serviços -Multas e Juros de Mora";"42.000,00";"156.548,94";"888.241,64";"2.114,86"
+"11220114";"Taxas pela Prestação de Serviços - Dívida Ativa - Multas e Juros";"52.000,00";"32.997,17";"399.612,94";"768,49"
+"1122011401";"Taxas pela Prestação de Serviços - Dívida Ativa - Multas e Juros";"52.000,00";"32.997,17";"399.612,94";"768,49"
+"1128";"Taxas - Específicas de Estados, DF e Municípios";"4.759.525,00";"189.854,32";"3.943.666,28";"82,86"
+"112801";"Taxas de Inspeção, Controle e Fiscalização";"4.759.525,00";"189.854,32";"3.943.666,28";"82,86"
+"1128011";"Taxa de Fiscalização de Vigilância Sanitária";"527.500,00";"11.731,80";"249.433,46";"47,29"
+"11280111";"Taxa de Fiscalização de Vigilância Sanitária - Principal";"527.500,00";"11.731,80";"249.433,46";"47,29"
+"1128011101";"TAXA DE FISCALIZAÇÃO DE VIGILÂNCIA SANITÁRIA";"288.000,00";"11.548,56";"248.201,34";"86,18"
+"1128011199";"OUTRAS TAXAS PELO EXERCÍCIO DO PODER DE POLÍCIA";"239.500,00";"183,24";"1.232,12";"0,51"
+"1128019";"Taxas de Inspeção, Controle e Fiscalização - Outras";"4.232.025,00";"178.122,52";"3.694.232,82";"87,29"
+"11280191";"Taxas de Inspeção, Controle e Fiscalização - Outras";"4.232.025,00";"178.027,18";"3.694.039,62";"87,29"
+"1128019101";"TAXA DE LICENÇA PARA FUNCIONAMENTO DE ESTABELECIMENTOS COMERCIAIS, INDÚSTRIAIS E PRESTADORA DE SERVIÇOS";"3.725.000,00";"93.774,77";"3.262.788,34";"87,59"
+"1128019104";"TAXA DE FUNCIONAMENTO DE ESTABELECIMENTOS EM HORÁRIO ESPECIAL";"1.000,00";0;0;0
+"1128019105";"TAXA DE LICENÇA PARA EXECUÇÃO DE OBRAS";"398.500,00";"83.853,14";"422.688,17";"106,07"
+"1128019106";"TAXA DE AUTORIZAÇÃO DE FUNCIONAMENTO DE TRANSPORTE";"102.000,00";"399,27";"8.563,11";"8,40"
+"1128019107";"TAXA DE UTILIZAÇÃO DE ÁREA DE DOMÍNIO PÚBLICO";"1.000,00";0;0;0
+"1128019110";"TAXA DE APREENSÃO, DEPÓSITO OU LIBERAÇÃO DE ANIMAIS";"4.525,00";0;0;0
+"11280192";"Taxas de Inspeção, Controle e Fiscalização - Outras - Multas e Juros de Mora";0;"95,34";"193,20";0
+"12";"CONTRIBUIÇÕES";"19.245.000,00";"4.653.161,08";"26.041.014,76";"135,31"
+"121";"CONTRIBUIÇÕES SOCIAIS";"8.000.000,00";"3.483.904,94";"13.326.630,88";"166,58"
+"1218";"Contribuições Sociais específicas de Estados, DF, Municípios";"8.000.000,00";"3.483.904,94";"13.326.630,88";"166,58"
+"121801";"Contribuição do Servidor Civil para o Plano de Seguridade Social - CPSSS - Específico de EST/DF/MUN";"8.000.000,00";"3.483.904,94";"13.326.630,88";"166,58"
+"1218011";"CPSSS do Servidor Civil Ativo";"8.000.000,00";"2.753.568,78";"12.596.294,72";"157,45"
+"12180111";"CPSSS do Servidor Civil Ativo - Principal";"8.000.000,00";"2.753.568,78";"12.596.294,72";"157,45"
+"1218011101";"CPSSS do Servidor Civil Ativo";"8.000.000,00";"2.753.568,78";"12.596.294,72";"157,45"
+"1218012";"CPSSS do Servidor Civil Inativo-";0;"730.336,16";"730.336,16";0
+"12180121";"CPSSS do Servidor Civil Inativo- Principal";0;"730.336,16";"730.336,16";0
+"1218012101";"CONTRIBUIÇÕES DE SERVIDOR INATIVO PARA O RPPS";0;"730.336,16";"730.336,16";0
+"124";"Contribuição para o Custeio do Serviço de Iluminação Pública";"11.245.000,00";"1.169.256,14";"12.714.383,88";"113,07"
+"1240";"Contribuição para o Custeio do Serviço de Iluminação Pública";"11.245.000,00";"1.169.256,14";"12.714.383,88";"113,07"
+"124000";"Contribuição para o Custeio do Serviço de Iluminação Pública";"11.245.000,00";"1.169.256,14";"12.714.383,88";"113,07"
+"1240001";"Contribuição para o Custeio do Serviço de Iluminação Pública";"11.245.000,00";"1.169.256,14";"12.714.383,88";"113,07"
+"12400011";"Contribuição para o Custeio do Serviço de Iluminação Pública - Principal";"11.245.000,00";"1.169.256,14";"12.714.383,88";"113,07"
+"1240001101";"Contribuição para o Custeio do Serviço de Iluminação Pública";"11.245.000,00";"1.169.256,14";"12.714.383,88";"113,07"
+"13";"RECEITA PATRIMONIAL";"10.384.300,00";"4.033.836,96";"15.893.969,49";"153,06"
+"131";"Exploração do Patrimônio Imobiliário do Estado";"385.000,00";"726,59";"842.128,01";"218,73"
+"131001";"Aluguéis, Arrendamentos, Foros, Laudêmios, Tarifas de Ocupação";"316.000,00";"726,59";"841.518,75";"266,30"
+"1310011";"Aluguéis e Arrendamentos";"316.000,00";"726,59";"841.518,75";"266,30"
+"13100111";"Aluguéis e Arrendamentos - Principal";"316.000,00";"726,59";"841.518,75";"266,30"
+"1310011102";"ALUGUEL DA ESTAÇÃO RODOVIÁRIA MUNICIPAL";"316.000,00";"726,59";"841.518,75";"266,30"
+"131099";"Outras Receitas Imobiliárias";"69.000,00";0;"609,26";"0,88"
+"1310991";"Outras Receitas Imobiliárias";"69.000,00";0;"609,26";"0,88"
+"13109911";"Outras Receitas Imobiliárias - Principal";"69.000,00";0;"609,26";"0,88"
+"1310991101";"OUTRAS RECEITAS IMOBILIÁRIAS";"69.000,00";0;"609,26";"0,88"
+"132";"VALORES MOBILIÁRIOS";"9.974.300,00";"4.011.313,16";"8.928.253,42";"89,51"
+"1321";"Juros e Correções Monetárias";"9.974.300,00";"4.011.313,16";"8.928.253,42";"89,51"
+"132100";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS";"9.974.300,00";"4.011.313,16";"8.928.253,42";"89,51"
+"1321001";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS";"1.274.300,00";"38.107,59";"482.563,77";"37,87"
+"13210011";"Remuneração de Depósitos Bancários - Principal";"1.274.300,00";"38.107,59";"482.563,77";"37,87"
+"1321001101";"RECEITA DE REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS DE RECURSOS VINCULADOS";"1.040.000,00";"35.032,65";"360.278,95";"34,64"
+"132100110102";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS - EDUCAÇÃO";"385.000,00";"1.148,20";"45.324,69";"11,77"
+"1321001101020001";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS - MANUTENÇÃO E DESENVOLVIMENTO DO ENSINO MDE";0;"16,55";"153,41";0
+"1321001101020002";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS  - FUNDEB";"360.000,00";"904,96";"40.767,77";"11,32"
+"1321001101020003";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS - Salário-Educação";"5.000,00";"58,46";"2.349,30";"46,99"
+"1321001101020005";"REMUNERAÇÃO DE DEP BANC DE RECUR VINC - FNDE referentes ao Programa Nacional de Alimentação Escolar - PNAE";"10.000,00";"98,02";"1.323,59";"13,24"
+"1321001101020006";"REMUNERAÇÃO DE DEP BANC VINC  FNDE referentes ao Programa Nacional de Apoio ao Transporte do Escolar - PNATE";"3.000,00";"16,77";"198,83";"6,63"
+"1321001101029999";"REMUNERAÇÃO DE DEP BANC DE RECU VINC- Outras Transferências Diretas do Fundo Nacional do Desenvolvimento da Educação - FNDE";"7.000,00";"53,44";"531,79";"7,60"
+"132100110103";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS - SAÚDE";"220.000,00";"3.853,99";"38.091,38";"17,31"
+"1321001101030001";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS - AÇÕES E SERVIÇOS PÚBLICOS DE SAÚDE - ASPS";"5.000,00";"11,93";"299,91";"6,00"
+"1321001101030002";"REMUN DE DEP BANC - Bloco de Custeio das Ações e de Serviços Públicos de Saúde";"193.000,00";"3.433,06";"30.378,41";"15,74"
+"1321001101030003";"REMUNERAÇÃO DE DEP BANCÁRIO - Bloco Inv na Red SERV";"8.000,00";"46,13";"355,21";"4,44"
+"1321001101030004";"REMUNERAÇÃO DE DEPOSITO BANCÁRIO - Fundo a Fundo Estado";"14.000,00";"362,87";"7.057,85";"50,41"
+"132100110105";"REMUNERAÇÃO  DE DEPOSITOS BANCARIOS - ALIENAÇÃO DE BENS";0;"1,91";"1,91";0
+"1321001101050001";"REMUNERAÇÃO DE DEPOSITOS BANCARIOS - ALIENAÇÃO DE BENS";0;"1,91";"1,91";0
+"132100110106";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS - CIDE";"10.000,00";"26,48";"292,33";"2,92"
+"132100110107";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS - MULTAS DE TRANSITO";0;"29,17";"1.998,50";0
+"132100110108";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS - FNAS";"148.000,00";"215,58";"8.566,55";"5,79"
+"132100110109";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS - SERVIÇO DE ILUMINAÇÃO PÚBLICA";"5.000,00";"1,26";"239,39";"4,79"
+"132100110111";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS - OPERAÇÕES DE CREDITO";0;"21.656,91";"123.039,51";0
+"1321001101110004";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS - DEMAIS OPERAÇÕES DE CREDITO";0;"21.656,91";"123.039,51";0
+"132100110112";"REMUNERAÇÃO DE DEPÓSITOS DE RECURSOS OUTRAS TRANSFERÊNCIA DE CONVÊNIOS";"272.000,00";"7.959,25";"142.369,77";"52,34"
+"1321001101120001";"REMUNERAÇÃO DE DEPOSITOS BANCÁRIOS - CONVÊNIOS COM ÁREA DA EDUCAÇÃO";"10.000,00";"145,45";"7.590,90";"75,91"
+"1321001101120002";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS - CONVÊNIOS COM A ÁREA DA SAÚDE";"36.000,00";"399,20";"6.267,67";"17,41"
+"1321001101120004";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS - Convênio da Administração direto da União";"219.000,00";"7.400,31";"127.888,57";"58,40"
+"1321001101120005";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS - CONVÊNIOS COM A ADMINISTRAÇÃO DIRETA DO ESTADO";"7.000,00";"14,29";"622,63";"8,89"
+"132100110199";"REMUNERAÇÃO DE OUTROS DEPOSITOS BANCARIOS";0;"139,90";"354,92";0
+"1321001101990001";"REMUNERACAO DE DEP. BANCARIO COVID19 - LEI ALDIR BLANC";0;"139,90";"354,92";0
+"1321001102";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS DE RECURSOS NÃO VINCULADOS";"234.300,00";"3.074,94";"122.284,82";"52,19"
+"132100110201";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS DE RECURSOS PRÓPRIOS";"234.300,00";"3.065,89";"122.272,34";"52,19"
+"132100110202";"REMUNERAÇÃO DE DEPÓSITOS BANCÁRIOS DE DOAÇOES";0;"9,05";"12,48";0
+"1321004";"Remuneração dos Recursos do Regime Próprio de Previdência Social - RPPS";"8.700.000,00";"3.973.205,57";"8.445.689,65";"97,08"
+"13210041";"Remuneração dos Recursos do Regime Próprio de Previdência Social - RPPS - Principal";"8.700.000,00";"3.973.205,57";"8.445.689,65";"97,08"
+"1321004102";"REMUNERAÇÃO DOS INVESTIMENTOS DO REGIME PRÓPRIO DE PREVIDÊNCIA DO SERVIDOR EM RENDA VARIÁVEL";"8.700.000,00";"3.973.205,57";"8.445.689,65";"97,08"
+"132100410201";"REMUNERAÇÃO DOS INVESTIMENTOS DO REGIME PRÓPRIO DE PREVIDÊNCIA DO SERVIDOR EM RENDA VARIÁVEL";"8.700.000,00";"3.973.205,57";"21.300.072,17";"244,83"
+"132100410202";"(-) DEDUÇÃO DE INVESTIMENTO IMPAR";0;0;"-12.854.382,52";0
+"134";"Exploração de Recursos Naturais";"25.000,00";"21.797,21";"123.588,06";"494,35"
+"1344";"Exploração de Recursos Minerais";"25.000,00";"21.797,21";"123.588,06";"494,35"
+"134402";"Compensação Financeira pela Exploração de Recursos Minerais";"25.000,00";"21.797,21";"123.588,06";"494,35"
+"1344021";"Compensação Financeira pela Exploração de Recursos Minerais";"25.000,00";"21.797,21";"123.588,06";"494,35"
+"13440211";"Compensação Financeira pela Exploração de Recursos Minerais - Principal";"25.000,00";"21.797,21";"123.588,06";"494,35"
+"1344021101";"COMPENSAÇÃO FINANCEIRA COM A EXPLORAÇÃO DE RECURSOS MINERAIS";"25.000,00";"21.797,21";"123.588,06";"494,35"
+"136";"Cessão de Direitos";0;0;"6.000.000,00";0
+"1360";"Cessão de Direitos";0;0;"6.000.000,00";0
+"136001";"Cessão do Direito de Operacionalização de Pagamentos";0;0;"6.000.000,00";0
+"1360011";"Cessão do Direito de Operacionalização de Pagamentos";0;0;"6.000.000,00";0
+"13600111";"Cessão do Direito de Operacionalização de Pagamentos - Principal";0;0;"6.000.000,00";0
+"1360011101";"RECEITA DE CESSÃO DO DIREITO DE OPERACIONALIZAÇÃO DA FOLHA DE PAGAMENTO DE PESSOAL";0;0;"6.000.000,00";0
+"16";"RECEITA DE SERVIÇOS";"25.000,00";"706,00";"13.205,76";"52,82"
+"164";"Serviços e Atividades Financeiras";"10.000,00";0;"2.828,76";"28,29"
+"1640";"Serviços e Atividades Financeiras";"10.000,00";0;"2.828,76";"28,29"
+"164001";"Retorno de Operações, Juros e Encargos Financeiros";"10.000,00";0;"2.828,76";"28,29"
+"1640011";"Retorno de Operações, Juros e Encargos Financeiros";"10.000,00";0;"2.828,76";"28,29"
+"16400111";"Retorno de Operações, Juros e Encargos Financeiros - Principal";0;0;"2.828,76";0
+"1640011199";"OUTROS SERVIÇOS FINANCEIROS";0;0;"2.828,76";0
+"164001119901";"OUTROS SERVIÇOS FINANCEIROS - 0010";0;0;"2.828,76";0
+"16400113";"Retorno de Operações, Juros e Encargos Financeiros - Dívida Ativa";"10.000,00";0;0;0
+"169";"OUTRAS RECEITAS DE SERVIÇOS";"15.000,00";"706,00";"10.377,00";"69,18"
+"1690";"OUTRAS RECEITAS DE SERVIÇOS";"15.000,00";"706,00";"10.377,00";"69,18"
+"169099";"Outros Serviços";"15.000,00";"706,00";"10.377,00";"69,18"
+"1690991";"Outros Serviços";"15.000,00";"706,00";"10.377,00";"69,18"
+"16909911";"Outros Serviços - Principal";"15.000,00";"706,00";"10.377,00";"69,18"
+"1690991199";"OUTROS SERVIÇOS";"15.000,00";"706,00";"10.377,00";"69,18"
+"17";"TRANSFERÊNCIAS CORRENTES";"389.491.340,64";"40.235.984,47";"382.149.002,76";"98,11"
+"171";"Transferências da União - Específica E/M";"209.497.940,64";"18.294.586,24";"195.672.968,37";"93,40"
+"1718";"Transferências da União - Específicas de Estados, DF e Municípios";"209.497.940,64";"18.294.586,24";"195.672.968,37";"93,40"
+"171801";"Participação na Receita da União";"76.764.000,00";"9.033.001,45";"61.756.346,91";"80,45"
+"1718012";"Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal";"68.000.000,00";"5.838.730,97";"54.839.016,44";"80,65"
+"17180121";"Cota-Parte do Fundo de Participação dos Municípios - Cota Mensal - Principal";"68.000.000,00";"5.838.730,97";"54.839.016,44";"80,65"
+"1718012101";"COTA-PARTE DO FPM - COTA MENSAL - PRÓPRIO";"51.000.000,00";"4.379.048,22";"41.129.262,36";"80,65"
+"1718012102";"COTA-PARTE DO FPM - COTA MENSAL- MDE";"4.250.000,00";"364.920,67";"3.427.438,33";"80,65"
+"1718012103";"COTA-PARTE DO FPM - COTA MENSAL- FUNDEB";"17.000.000,00";"1.459.682,72";"13.709.753,85";"80,65"
+"1718012104";"COTA-PARTE DO FPM - COTA MENSAL- ASPS";"12.750.000,00";"1.094.762,04";"10.282.315,31";"80,65"
+"1718012193";"(-) DEDUÇÃO COTA-PARTE DO FPM - COTA MENSAL- FUNDEB";"-17.000.000,00";"-1.459.682,68";"-13.709.753,41";"80,65"
+"1718013";"Cota-Parte do Fundo de Participação do Municípios  1% Cota entregue no mês de dezembro";"4.000.000,00";"3.084.719,93";"3.084.719,93";"77,12"
+"17180131";"Cota-Parte do Fundo de Participação do Municípios  1% Cota entregue no mês de dezembro - Principal";"4.000.000,00";"3.084.719,93";"3.084.719,93";"77,12"
+"1718013101";"COTA-PARTE DO FUNDO DE PARTICIPAÇÃO DO MUNICÍPIOS   1% COTA ENTREGUE NO MÊS DE DEZEMBRO (EC Nº 55/2007) - PRÓPRIO";"3.000.000,00";"2.313.539,95";"2.313.539,95";"77,12"
+"1718013102";"COTA-PARTE DO FUNDO DE PARTICIPAÇÃO DO MUNICÍPIOS   1% COTA ENTREGUE NO MÊS DE DEZEMBRO (EC Nº 55/2007) - MDE";"1.000.000,00";"771.179,98";"771.179,98";"77,12"
+"1718014";"Cota-Parte do Fundo de Participação dos Municípios - 1% Cota entregue no mês de julho";"4.100.000,00";0;"3.091.296,62";"75,40"
+"17180141";"Cota-Parte do Fundo de Participação dos Municípios - 1% Cota entregue no mês de julho - Principal";"4.100.000,00";0;"3.091.296,62";"75,40"
+"1718014101";"COTA-PARTE DO FUNDO DE PARTICIPAÇÃO DO MUNICÍPIOS  1% COTA ENTREGUE NO MÊS DE JULHO (EC Nº 84/2014) - PRÓPRIO";"3.075.000,00";0;"2.318.472,47";"75,40"
+"1718014102";"COTA-PARTE DO FUNDO DE PARTICIPAÇÃO DO MUNICÍPIOS  1% COTA ENTREGUE NO MÊS DE JULHO (EC Nº 84/2014) - MDE";"1.025.000,00";0;"772.824,15";"75,40"
+"1718015";"Cota-Parte do Imposto Sobre a Propriedade Territorial Rural";"664.000,00";"109.550,55";"741.313,92";"111,64"
+"17180151";"Cota-Parte do Imposto Sobre a Propriedade Territorial Rural - Principal";"664.000,00";"109.550,55";"741.313,92";"111,64"
+"1718015101";"COTA-PARTE DO ITR - PRÓPRIO";"498.000,00";"82.162,94";"555.985,79";"111,64"
+"1718015102";"COTA-PARTE DO ITR - MDE";"41.500,00";"6.846,90";"46.331,94";"111,64"
+"1718015103";"COTA-PARTE DO ITR - FUNDEB";"166.000,00";"27.387,63";"185.328,32";"111,64"
+"1718015104";"COTA-PARTE DO ITR - ASPS";"124.500,00";"20.540,71";"138.996,19";"111,64"
+"1718015193";"(-) DEDUÇÃO COTA-PARTE DO ITR - FUNDEB";"-166.000,00";"-27.387,63";"-185.328,32";"111,64"
+"171802";"Transferência da Compensação Financeira pela Exploração de Recursos Naturais";"1.258.500,00";"96.962,54";"1.102.874,48";"87,63"
+"1718022";"Cota-parte da Compensação Financeira de Recursos Minerais - CFEM";"104.500,00";0;0;0
+"17180221";"Cota-parte da Compensação Financeira de Recursos Minerais - CFEM - Principal";"104.500,00";0;0;0
+"1718026";"Cota-Parte do Fundo Especial do Petróleo  FEP";"1.154.000,00";"96.962,54";"1.102.874,48";"95,57"
+"17180261";"Cota-Parte do Fundo Especial do Petróleo  FEP";"1.154.000,00";"96.962,54";"1.102.874,48";"95,57"
+"1718026101";"Cota-Parte do Fundo Especial do Petróleo FEP - Principal";"1.154.000,00";"96.962,54";"1.102.874,48";"95,57"
+"171803";"Transferência de Recursos do Sistema Único de Saúde  SUS Bloco Custeio das Ações e Serviços Públicos de Saúde";"62.377.830,00";"7.502.673,62";"90.371.491,70";"144,88"
+"1718031";"Transferência de Recursos do SUS  Atenção Básica";"19.285.565,47";"2.102.715,24";"21.295.318,88";"110,42"
+"17180311";"Transferência de Recursos do SUS Atenção Básica";"19.285.565,47";"2.102.715,24";"21.295.318,88";"110,42"
+"1718032";"Transferência de Recursos do SUS  Atenção de Média e Alta Complexidade Ambulatorial e Hospitalar";"37.200.010,00";"1.979.646,92";"38.742.314,35";"104,15"
+"17180321";"Transferência de Recursos do SUS Atenção de Média e Alta Complexidade Ambulatorial e Hospitalar";"37.200.010,00";"1.979.646,92";"38.742.314,35";"104,15"
+"1718033";"Transferência de Recursos do SUS  Vigilância em Saúde";"3.982.254,53";"180.777,00";"3.611.327,79";"90,69"
+"17180331";"Transferência de Recursos do SUS Vigilância em Saúde";"3.982.254,53";"180.777,00";"3.611.327,79";"90,69"
+"1718034";"Transferência de Recursos do SUS  Assistência Farmacêutica";"1.910.000,00";"94.731,08";"1.094.772,96";"57,32"
+"17180341";"Transferência de Recursos do SUS Assistência Farmacêutica";"1.910.000,00";"94.731,08";"1.094.772,96";"57,32"
+"1718035";"Transferência de Recursos do SUS  Gestão do SUS";0;"134.767,38";"154.767,38";0
+"17180351";"Transferência de Recursos do SUS Gestão do SUS - PRINCIPAL";0;"134.767,38";"154.767,38";0
+"1718039";"Transferência de Recursos do SUS  Outros Programas Financiados por Transferências Fundo a Fundo";0;"3.010.036,00";"25.472.990,34";0
+"17180392";"Transferência de Recursos do SUS Outros Programas Financiados por Transferências Fundo a Fundo - COVID-19";0;"3.010.036,00";"25.472.990,34";0
+"171805";"Transferências de Recursos do Fundo Nacional do Desenvolvimento da Educação  FNDE";"7.230.600,00";"395.019,82";"4.968.248,24";"68,71"
+"1718051";"Transferências do Salário-Educação";"2.376.500,00";"138.255,26";"1.970.162,81";"82,90"
+"17180511";"Transferências do Salário-Educação - Principal";"2.376.500,00";"138.255,26";"1.970.162,81";"82,90"
+"1718053";"Transferências Diretas do FNDE referentes ao Programa Nacional de Alimentação Escolar  PNAE";"3.730.000,00";"251.049,80";"2.761.547,80";"74,04"
+"17180531";"Transferências Diretas do FNDE referentes ao Programa Nacional de Alimentação Escolar  PNAE - Principal";"3.730.000,00";"251.049,80";"2.761.547,80";"74,04"
+"1718054";"Transferências Diretas do FNDE referentes ao Programa Nacional de Apoio ao Transporte do Escolar  PNATE";"250.000,00";"5.714,76";"221.640,16";"88,66"
+"17180541";"Transferências Diretas do FNDE referentes ao Programa Nacional de Apoio ao Transporte do Escolar  PNATE - Principal";"250.000,00";"5.714,76";"221.640,16";"88,66"
+"1718059";"Outras Transferências Diretas do Fundo Nacional do Desenvolvimento da Educação  FNDE";"874.100,00";0;"14.897,47";"1,70"
+"17180591";"Outras Transferências Diretas do Fundo Nacional do Desenvolvimento da Educação  FNDE - Principal";"874.100,00";0;"14.897,47";"1,70"
+"171806";"Transferência Financeira do ICMS  Desoneração  L.C. Nº 87/96";"42.400,00";0;0;0
+"1718061";"Transferência Financeira do ICMS  Desoneração  L.C. Nº 87/96";"42.400,00";0;0;0
+"17180611";"Transferência Financeira do ICMS  Desoneração  L.C. Nº 87/96 - Principal";"42.400,00";0;0;0
+"1718061101";"Transferência Financeira do ICMS  Desoneração  L.C. Nº 87/96";"31.800,00";0;0;0
+"1718061102";"TRANSFERÊNCIA FINANCEIRA  LC N° 87/96 - MDE";"2.650,00";0;0;0
+"1718061103";"TRANSFERÊNCIA FINANCEIRA  LC N° 87/96 - FUNDEB";"10.600,00";0;0;0
+"1718061104";"TRANSFERÊNCIA FINANCEIRA  LC N° 87/96 - ASPS";"7.950,00";0;0;0
+"1718061193";"(-) DEDUÇÃO TRANSFERÊNCIA FINANCEIRA LC N° 87/96 - FUNDEB";"-10.600,00";0;0;0
+"171810";"Transferências de Convênios da União e de Suas Entidades";"4.574.000,00";"376.924,58";"1.449.024,93";"31,68"
+"1718102";"Transferências de Convênios da União Destinadas a Programas de Educação";"670.000,00";0;0;0
+"17181021";"Transferências de Convênios da União Destinadas a Programas de Educação - Principal";"670.000,00";0;0;0
+"1718109";"Outras Transferências de Convênios da União";"3.904.000,00";"376.924,58";"1.449.024,93";"37,12"
+"17181091";"Outras Transferências de Convênios da União - Principal";"3.904.000,00";"376.924,58";"1.449.024,93";"37,12"
+"1718109102";"Outras Transferências de Convênios da União";"3.904.000,00";"376.924,58";"1.449.024,93";"37,12"
+"171812";"Transferências de Recursos do Fundo Nacional de Assistência Social  FNAS";"1.933.000,00";"90.861,38";"2.439.802,33";"126,22"
+"1718121";"Transferências de Recursos do Fundo Nacional de Assistência Social  FNAS";"1.933.000,00";"90.861,38";"2.439.802,33";"126,22"
+"17181211";"Transferências de Recursos do Fundo Nacional de Assistência Social  FNAS - Principal";"1.933.000,00";"90.861,38";"2.439.802,33";"126,22"
+"1718121101";"Transferências de Recursos do Fundo Nacional de Assistência Social FNAS";"1.933.000,00";"90.861,38";"792.604,83";"41,00"
+"1718121102";"Transferências de Recursos do Fundo Nacional de Assistência Social FNAS - COVID";0;0;"1.647.197,50";0
+"171899";"Outras Transferências da União";"55.317.610,64";"799.142,85";"33.585.179,78";"60,71"
+"1718991";"Outras Transferências da União";"55.317.610,64";"799.142,85";"33.585.179,78";"60,71"
+"17189911";"Outras Transferências da União - Principal";"55.317.610,64";"799.142,85";"33.585.179,78";"60,71"
+"1718991108";"TRANSFERÊNCIAS DA UNIÃO, CONFORME INCISO I DO ART 5º DA LC 173/2020";0;0;"2.619.391,70";0
+"171899110801";"TRANSFERÊNCIAS DA UNIÃO, CONFORME INCISO I DO ART 5º DA LC 173/2020";0;0;"2.619.391,70";0
+"1718991109";"TRANSFERÊNCIAS DA UNIÃO, CONFORME INCISO II DO ART 5º DA LC 173/2020";0;0;"23.379.974,82";0
+"171899110901";"TRANSFERÊNCIAS DA UNIÃO, CONFORME INCISO II DO ART 5º DA LC 173/2020";0;0;"23.379.974,82";0
+"1718991110";"Auxilio Financeiro ao Setor Cultural em função da COVID-19 - Lei Aldir Blanc";0;0;"1.241.596,43";0
+"171899111001";"Transferências da União - Lei Aldir Blanc";0;0;"1.241.596,43";0
+"1718991199";"Outras Transferências da União";"55.317.610,64";"799.142,85";"6.344.216,83";"11,47"
+"171899119906";"APOIO FINANCEIRO (MP N° 938/2020)";0;0;"5.545.073,98";0
+"171899119907";"TRANSFERÊNCIA DA UNIÃO - LEI KANDIR";0;"799.142,85";"799.142,85";0
+"171899119999";"OUTRAS TRANSFERÊNCIAS DA UNIÃO";"55.317.610,64";0;0;0
+"172";"Transferências dos Estados e do Distrito Federal e de suas Entidades";"81.816.400,00";"8.573.803,63";"83.661.709,41";"102,26"
+"1728";"Transferências dos Estados - Específicas Estados, DF e Municípios";"81.816.400,00";"8.573.803,63";"83.661.709,41";"102,26"
+"172801";"Participação na Receita dos Estados";"70.608.400,00";"7.541.415,50";"75.980.956,41";"107,61"
+"1728011";"Cota-Parte do ICMS";"47.200.000,00";"5.638.172,85";"50.150.787,34";"106,25"
+"17280111";"Cota-Parte do ICMS - Principal";"47.200.000,00";"5.638.172,85";"50.150.787,34";"106,25"
+"1728011101";"COTA-PARTE DO ICMS - PRÓPRIO";"35.400.000,00";"4.228.630,02";"37.613.094,43";"106,25"
+"1728011102";"COTA-PARTE DO ICMS - MDE";"2.950.000,00";"352.385,81";"3.134.424,19";"106,25"
+"1728011103";"COTA-PARTE DO ICMS - FUNDEB";"11.800.000,00";"1.409.543,30";"12.537.697,66";"106,25"
+"1728011104";"COTA-PARTE DO ICMS - ASPS";"8.850.000,00";"1.057.157,47";"9.403.273,15";"106,25"
+"1728011193";"(-) DEDUÇÃO COTA-PARTE DO ICMS - FUNDEB";"-11.800.000,00";"-1.409.543,75";"-12.537.702,09";"106,25"
+"1728012";"Cota-Parte do IPVA";"22.400.000,00";"1.891.464,76";"25.413.489,24";"113,45"
+"17280121";"Cota-Parte do IPVA - Principal";"22.400.000,00";"1.891.464,76";"25.413.489,24";"113,45"
+"1728012101";"COTA-PARTE DO IPVA - PRÓPRIO";"16.800.000,00";"1.418.598,75";"19.060.118,36";"113,45"
+"1728012102";"COTA-PARTE DO IPVA - MDE";"1.400.000,00";"118.216,54";"1.588.342,93";"113,45"
+"1728012103";"COTA-PARTE DO IPVA - FUNDEB";"5.600.000,00";"472.866,21";"6.353.372,36";"113,45"
+"1728012104";"COTA-PARTE DO IPVA - ASPS";"4.200.000,00";"354.649,65";"4.765.029,17";"113,45"
+"1728012193";"(-) DEDUÇÃO COTA-PARTE DO IPVA - FUNDEB";"-5.600.000,00";"-472.866,39";"-6.353.373,58";"113,45"
+"1728013";"Cota-Parte do IPI - Municípios";"118.400,00";"11.777,89";"79.227,58";"66,92"
+"17280131";"Cota-Parte do IPI - Municípios - Principal";"118.400,00";"11.777,89";"79.227,58";"66,92"
+"1728013101";"COTA-PARTE DO IPI - MUNICÍPIOS- PRÓPRIO";"88.800,00";"9.708,34";"59.457,91";"66,96"
+"1728013102";"COTA-PARTE DO IPI - MUNICÍPIOS- MDE";"7.400,00";"809,00";"4.954,63";"66,95"
+"1728013103";"COTA-PARTE DO IPI - MUNICÍPIOS- FUNDEB";"29.600,00";"3.236,09";"19.819,03";"66,96"
+"1728013104";"COTA-PARTE DO IPI - MUNICÍPIOS- ASPS";"22.200,00";"2.427,05";"14.864,19";"66,96"
+"1728013193";"(-) DEDUÇÃO COTA-PARTE DO IPI - MUNICÍPIOS- FUNDEB";"-29.600,00";"-4.402,59";"-19.868,18";"67,12"
+"1728014";"Cota-Parte da Contribuição de Intervenção no Domínio Econômico";"890.000,00";0;"337.452,25";"37,92"
+"17280141";"Cota-Parte da Contribuição de Intervenção no Domínio Econômico - Principal";"890.000,00";0;"337.452,25";"37,92"
+"172803";"Transferência de Recursos do Estado para Programas de Saúde  Repasse Fundo a Fundo";"6.240.000,00";"615.288,13";"6.767.528,00";"108,45"
+"1728031";"Transferência de Recursos do Estado para Programas de Saúde  Repasse Fundo a Fundo";"6.240.000,00";"615.288,13";"6.767.528,00";"108,45"
+"17280311";"Transferência de Recursos do Estado para Programas de Saúde  Repasse Fundo a Fundo - Principal";"6.240.000,00";"615.288,13";"6.767.528,00";"108,45"
+"1728031101";"Transferência de Recursos do Estado para Programas de Saúde Repasse Fundo a Fundo";"6.240.000,00";"615.288,13";"6.767.528,00";"108,45"
+"172807";"Transferências de Estados destinadas à Assistência Social";"120.000,00";0;0;0
+"1728071";"Transferências de Estados destinadas à Assistência Social";"120.000,00";0;0;0
+"17280711";"Transferências de Estados destinadas à Assistência Social - Principal";"120.000,00";0;0;0
+"172810";"Transferência de Convênios dos Estados e do Distrito Federal e de Suas Entidades";"4.848.000,00";"417.100,00";"913.225,00";"18,84"
+"1728101";"Transferências de Convênio dos Estados para o Sistema Único de Saúde  SUS";"2.882.000,00";0;0;0
+"17281011";"Transferências de Convênio dos Estados para o Sistema Único de Saúde  SUS - Principal";"2.882.000,00";0;0;0
+"1728102";"Transferências de Convênio dos Estados Destinadas a Programas de Educação";"1.441.000,00";"417.100,00";"913.225,00";"63,37"
+"17281021";"Transferências de Convênio dos Estados Destinadas a Programas de Educação - Principal";"1.441.000,00";"417.100,00";"913.225,00";"63,37"
+"1728109";"Outras Transferências de Convênio dos Estados";"525.000,00";0;0;0
+"17281091";"Outras Transferências de Convênio dos Estados - Principal";"525.000,00";0;0;0
+"1728109101";"Outras Transferências de Convênio dos Estados";"525.000,00";0;0;0
+"174";"Transferências de Instituições Privadas";"2.520.000,00";0;0;0
+"1740";"Transferências de Instituições Privadas";"2.520.000,00";0;0;0
+"174000";"Transferências de Instituições Privadas";"2.520.000,00";0;0;0
+"1740001";"Transferências de Instituições Privadas";"2.520.000,00";0;0;0
+"17400011";"Transferências de Instituições Privadas - Principal";"2.520.000,00";0;0;0
+"1740001103";"PROVENIENTES DE PESSOAS JURÍDICAS";"2.520.000,00";0;0;0
+"175";"Transferências de Outras Instituições Públicas";"95.268.500,00";"13.223.902,84";"102.562.837,01";"107,66"
+"1750";"Transferências de Outras Instituições Públicas";0;0;"250.821,24";0
+"175000";"Transferências de Outras Instituições Públicas";0;0;"250.821,24";0
+"1750001";"Transferências de Outras Instituições Públicas";0;0;"250.821,24";0
+"17500011";"Transferências de Outras Instituições Públicas - Principal";0;0;"250.821,24";0
+"1750001101";"Transferências de Outras Instituições Públicas - Principal - 0103.00.777";0;0;"135.036,09";0
+"1750001102";"Transferências de Outras Instituições Públicas - Principal";0;0;"115.785,15";0
+"1758";"Transferências de Outras Instituições Públicas - Específicas de Estados, DF e Municípios";"95.268.500,00";"13.223.902,84";"102.312.015,77";"107,39"
+"175801";"Transferências de Recursos do Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação  FUNDEB";"95.268.500,00";"13.223.902,84";"102.312.015,77";"107,39"
+"1758011";"Transferências de Recursos do Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação ? FUNDEB";"95.268.500,00";"13.223.902,84";"102.312.015,77";"107,39"
+"17580111";"Transferências de Recursos do Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação  FUNDEB - Principal";"95.268.500,00";"13.223.902,84";"102.312.015,77";"107,39"
+"177";"Transferências de Pessoas Físicas";"388.500,00";"143.691,76";"251.487,97";"64,73"
+"1770001";"Transferências de Pessoas Físicas";"388.500,00";"143.691,76";"251.487,97";"64,73"
+"17700011";"Transferências de Pessoas Físicas - Principal";"388.500,00";"143.691,76";"251.487,97";"64,73"
+"1770001199";"OUTRAS TRANSFERÊNCIAS DE PESSOAS";"388.500,00";"143.691,76";"251.487,97";"64,73"
+"19";"OUTRAS RECEITAS CORRENTES";"6.202.603,00";"3.802.844,47";"19.766.027,64";"318,67"
+"191";"Multas Administrativas, Contratuais e Judiciais";"5.691.103,00";"360.014,82";"7.386.413,13";"129,79"
+"1910";"Multas Administrativas, Contratuais e Judiciais";"5.691.103,00";"360.014,82";"7.386.413,13";"129,79"
+"191001";"Multas Previstas em Legislação Específica";"5.621.103,00";"346.823,32";"7.258.183,79";"129,12"
+"1910011";"Multas Previstas em Legislação Específica";"5.621.103,00";"346.823,32";"7.258.183,79";"129,12"
+"19100111";"Multas Previstas em Legislação Específica - Principal";"5.621.103,00";"346.823,32";"7.258.183,79";"129,12"
+"1910011104";"MULTAS PREVISTAS NA LEGISLAÇÃO DE TRÂNSITO";"2.421.103,00";"314.035,30";"3.843.559,54";"158,75"
+"1910011107";"MULTAS POR AUTO DE INFRAÇÃO";"3.200.000,00";"32.788,02";"3.414.624,25";"106,71"
+"191006";"Multas por Danos Ambientais";"70.000,00";"13.191,50";"128.229,34";"183,18"
+"1910061";"Multas Administrativas por Danos Ambientais";"20.000,00";0;"39.390,19";"196,95"
+"19100611";"Multas Administrativas por Danos Ambientais - Principal";"20.000,00";0;"39.390,19";"196,95"
+"1910061101";"MULTAS POR DANOS AO MEIO AMBIENTE";"20.000,00";0;"39.390,19";"196,95"
+"1910062";"Multas Judiciais por Danos Ambientais";"50.000,00";"13.191,50";"88.839,15";"177,68"
+"19100621";"Multas Judiciais por Danos Ambientais - Principal";"50.000,00";"13.191,50";"88.839,15";"177,68"
+"192";"Indenizações, Restituições e Ressarcimentos";"121.500,00";"3.338.948,52";"10.875.375,76";"8.950,93"
+"1922";"RESTITUIÇÕES";"121.500,00";"3.338.948,52";"10.875.375,76";"8.950,93"
+"192206";"Restituição de Despesas de Exercícios Anteriores";0;"2.749.628,88";"9.838.347,27";0
+"1922061";"Restituição de Despesas de Exercícios Anteriores";0;"2.749.628,88";"9.838.347,27";0
+"19220611";"Restituição de Despesas de Exercícios Anteriores - Principal";0;"2.749.628,88";"9.838.347,27";0
+"1922061101";"RECUPERAÇÃO DE DESPESAS DE EXERCÍCIOS ANTERIORES";0;"2.749.628,88";"9.838.347,27";0
+"192206110101";"RECUPERAÇÃO DE DESPESAS DE EXERCÍCIOS ANTERIORES - 0010.00.000";0;0;"594.278,58";0
+"192206110102";"RECUPERAÇÃO DE DESPESAS DE EXERCÍCIOS ANTERIORES - 0010.00.020";0;0;"386.575,22";0
+"192206110103";"RECUPERAÇÃO DE DESPESAS DE EXERCÍCIOS ANTERIORES - 0010.00.040";0;0;"381.415,79";0
+"192206110104";"RECUPERAÇÃO DE DESPESAS DE EXERCÍCIOS ANTERIORES - 0010.00.000 - INTRA";0;"673.338,56";"1.903.612,76";0
+"192206110105";"RECUPERAÇÃO DE DESPESAS DE EXERCÍCIOS ANTERIORES - 0010.00.020 - INTRA";0;"720.708,45";"2.620.856,19";0
+"192206110106";"RECUPERAÇÃO DE DESPESAS DE EXERCÍCIOS ANTERIORES - 0010.00.040 - INTRA";0;"1.355.581,87";"3.951.608,73";0
+"192299";"Outras Restituições";"121.500,00";"589.319,64";"1.037.028,49";"853,52"
+"1922991";"OUTRAS RESTITUIÇÕES";"121.500,00";"589.319,64";"1.037.028,49";"853,52"
+"19229911";"OUTRAS RESTITUIÇÕES - Principal";"121.500,00";"589.319,64";"1.037.028,49";"853,52"
+"1922991103";"RESTITUIÇÃO PELO PAGAMENTO INDEVIDO";"1.000,00";"560.015,15";"560.015,15";"56.001,52"
+"1922991199";"OUTRAS RESTITUIÇÕES";"120.500,00";"29.304,49";"477.013,34";"395,86"
+"199";"Demais Receitas Correntes";"390.000,00";"103.881,13";"1.504.238,75";"385,70"
+"1990";"Demais Receitas Correntes";"390.000,00";"103.881,13";"1.504.238,75";"385,70"
+"199012";"Encargos Legais pela Inscrição em Dívida Ativa e Receitas de Ônus de Sucumbência";"390.000,00";"103.881,13";"1.504.238,75";"385,70"
+"1990122";"Ônus de Sucumbência";"390.000,00";"103.881,13";"1.504.238,75";"385,70"
+"19901221";"Ônus de Sucumbência - Principal";"390.000,00";"103.881,13";"1.504.238,75";"385,70"
+"2";"RECEITAS DE CAPITAL";"121.283.501,00";"1.334.884,92";"88.189.037,42";"72,71"
+"21";"Operações de Crédito";"54.862.501,00";0;"39.100.674,63";"71,27"
+"211";"Operações de Crédito - Mercado Interno";"1.400.000,00";0;0;0
+"2118";"Operações de Crédito - Mercado Interno - Estados/DF/Municípios";"1.400.000,00";0;0;0
+"211801";"Operações de Crédito Internas de Estados/DF/Municípios";"1.400.000,00";0;0;0
+"2118015";"Operações de Crédito Internas para Programas de Modernização da Administração Pública";"1.400.000,00";0;0;0
+"21180151";"Operações de Crédito Internas para Programas de Modernização da Administração Pública - Principal";"1.400.000,00";0;0;0
+"2118015101";"Operações de Crédito Internas para Programas de Modernização da Administração Tributária";"1.400.000,00";0;0;0
+"212";"Operações de Crédito - Mercado Externo";"53.462.501,00";0;"39.100.674,63";"73,14"
+"2129";"Outras Operações de Crédito - Mercado Externo";"53.462.501,00";0;"39.100.674,63";"73,14"
+"212900";"Outras Operações de Crédito - Mercado Externo";"53.462.501,00";0;"39.100.674,63";"73,14"
+"2129001";"Outras Operações de Crédito - Mercado Externo";"53.462.501,00";0;"39.100.674,63";"73,14"
+"21290011";"Outras Operações de Crédito - Mercado Externo - Principal";"53.462.501,00";0;"39.100.674,63";"73,14"
+"2129001101";"OUTRAS OPERAÇÕES DE CREDITO - MERCADO EXTERNO - PROJETO SANEAMENTO INTEGRADO";"53.462.501,00";0;"39.100.674,63";"73,14"
+"22";"ALIENAÇÃO DE BENS";0;"329.155,53";"329.155,53";0
+"222";"Alienação de Bens Imóveis";0;"329.155,53";"329.155,53";0
+"2220";"Alienação de Bens Imóveis";0;"329.155,53";"329.155,53";0
+"222000";"Alienação de Bens Imóveis";0;"329.155,53";"329.155,53";0
+"2220001";"Alienação de Bens Imóveis";0;"329.155,53";"329.155,53";0
+"22200011";"Alienação de Bens Imóveis - Principal";0;"329.155,53";"329.155,53";0
+"2220001104";"ALIENAÇÃO DE IMÓVEIS URBANOS";0;"329.155,53";"329.155,53";0
+"23";"AMORTIZAÇÃO DE EMPRÉSTIMOS";"1.900.000,00";"129.724,39";"2.639.172,52";"138,90"
+"230";"AMORTIZAÇÃO DE EMPRÉSTIMOS";"1.900.000,00";"129.724,39";"2.639.172,52";"138,90"
+"2300";"AMORTIZAÇÃO DE EMPRÉSTIMOS";"1.900.000,00";"129.724,39";"2.639.172,52";"138,90"
+"230006";"Amortização de Empréstimos Contratuais";"1.900.000,00";"129.724,39";"2.639.172,52";"138,90"
+"2300061";"Amortização de Empréstimos Contratuais";"1.900.000,00";"129.724,39";"2.639.172,52";"138,90"
+"23000611";"Amortização de Empréstimos Contratuais - Principal";"1.900.000,00";"121.018,39";"2.552.477,05";"134,34"
+"2300061105";"AMORTIZAÇÃO DE FINANCIAMENTOS CONCEDIDOS PARA CRÉDITO EDUCATIVO";"1.900.000,00";"121.018,39";"2.552.477,05";"134,34"
+"23000613";"Amortização de Empréstimos Contratuais - Divida Ativa";0;"8.706,00";"86.695,47";0
+"2300061305";"AMORTIZAÇÃO DE FINANCIAMENTOS CONCEDIDOS PARA CRÉDITO EDUCATIVO";0;"8.706,00";"86.695,47";0
+"24";"TRANSFERÊNCIAS DE CAPITAL";"64.521.000,00";"876.005,00";"44.179.777,31";"68,47"
+"241";"Transferências da União e de suas Entidades";"62.724.000,00";"876.005,00";"41.179.777,31";"65,65"
+"2418";"Transferências da União - Específicas de Estados, DF e Municípios";"62.724.000,00";"876.005,00";"41.179.777,31";"65,65"
+"241804";"Transferências de Recursos do Sistema Único de Saúde  SUS - Bloco Investimentos na Rede de Serviços Públicos de Saúde";"750.000,00";"654.097,00";"1.188.796,00";"158,51"
+"2418041";"Transferências de Recursos do Sistema Único de Saúde  SUS destinados à Atenção Básica";"400.000,00";0;0;0
+"2418042";"Transferências de Recursos do Sistema Único de Saúde  SUS destinados à Atenção Especializada";"350.000,00";0;"534.699,00";"152,77"
+"2418046";"Outras Transferências de Recursos do Sistema Único de Saúde  SUS, não detalhadas anteriormente";0;"654.097,00";"654.097,00";0
+"24180461";"Outras Transferências de Recursos do Sistema Único de Saúde SUS";0;"654.097,00";"654.097,00";0
+"2418046101";"Outras Transferências de Recursos do Sistema Único de Saúde SUS - 0400.00.777";0;"654.097,00";"654.097,00";0
+"241810";"Transferência de Convênios da União e de suas Entidades";"61.974.000,00";"221.908,00";"39.990.981,31";"64,53"
+"2418101";"Transferências de Convênio da União para o Sistema Único de Saúde  SUS";"5.395.000,00";0;0;0
+"24181011";"Transferências de Convênio da União para o Sistema Único de Saúde  SUS - Principal";"5.395.000,00";0;0;0
+"2418102";"Transferências de Convênio da União destinadas a Programas de Educação";"9.290.000,00";0;"1.691.048,55";"18,20"
+"24181021";"Transferências de Convênio da União destinadas a Programas de Educação - Principal";"9.290.000,00";0;"1.691.048,55";"18,20"
+"2418109";"Outras Transferências de Convênios da União";"47.289.000,00";"221.908,00";"38.299.932,76";"80,99"
+"24181091";"Outras Transferências de Convênios da União - Principal";"47.289.000,00";"221.908,00";"38.299.932,76";"80,99"
+"2418109101";"Outras Transferências de Convênios da União - 2070";"47.289.000,00";"221.908,00";"38.299.932,76";"80,99"
+"242";"Transferências dos Estados e do Distrito Federal e de suas Entidades";"1.797.000,00";0;"3.000.000,00";"166,94"
+"2428";"Transferências dos Estados, Distrito Federal, e de suas Entidades";"1.797.000,00";0;"3.000.000,00";"166,94"
+"242810";"Transferências de Convênios dos Estados e do Distrito Federal e de suas Entidades";"1.797.000,00";0;"3.000.000,00";"166,94"
+"2428101";"Transferências de Convênios dos Estados para o Sistema Único de Saúde  SUS";0;0;"3.000.000,00";0
+"24281011";"Transferências de Convênios dos Estados para o Sistema Único de Saúde  SUS - Principal";0;0;"3.000.000,00";0
+"2428101101";"Transferências de Convênios dos Estados para o Sistema Único de Saúde SUS - 0498";0;0;"3.000.000,00";0
+"2428109";"Outras Transferências de Convênio dos Estados";"1.797.000,00";0;0;0
+"24281091";"Outras Transferências de Convênio dos Estados - Principal";"1.797.000,00";0;0;0
+"29";"OUTRAS RECEITAS DE CAPITAL";0;0;"1.940.257,43";0
+"299";"Demais Receitas de Capital";0;0;"1.940.257,43";0
+"2998";"Demais Receitas de Capital Específicas de Estados, DF e Municípios";0;0;"1.940.257,43";0
+"299801";"Demais Receitas de Capital Específicas de E/DF/M";0;0;"1.940.257,43";0
+"2998019";"OUTRAS RECEITAS DE CAPITAL";0;0;"1.940.257,43";0
+"7";"RECEITAS CORRENTES INTRAORÇAMENTÁRIAS";"13.000.000,00";"2.656.543,12";"17.868.827,46";"137,45"
+"72";"CONTRIBUIÇÕES INTRAORÇAMENTÁRIAS";"13.000.000,00";"2.656.543,12";"17.868.827,46";"137,45"
+"721";"CONTRIBUIÇÕES SOCIAIS - INTRAORÇAMENTÁRIAS";"13.000.000,00";"2.656.543,12";"17.868.827,46";"137,45"
+"7218";"Contribuições Sociais específicas de Estados, DF, Municípios";"13.000.000,00";"2.656.543,12";"17.868.827,46";"137,45"
+"721801";"Contribuição do Servidor Civil para o Plano de Seguridade Social - CPSSS - Específico de EST/DF/MUN";"8.000.000,00";"2.030.747,80";"9.967.791,99";"124,60"
+"7218011";"CPSSS do Servidor Civil Ativo";"8.000.000,00";"2.030.747,80";"9.967.791,99";"124,60"
+"72180111";"CPSSS do Servidor Civil Ativo - Principal";"8.000.000,00";"2.030.747,80";"9.967.791,99";"124,60"
+"7218011101";"Contribuição Patronal dos Servidores Civis Inativos";"8.000.000,00";"2.030.747,80";"9.967.791,99";"124,60"
+"721804";"CPSSS Patronal - Parcelamentos - Específico de EST/DF/MUN";"5.000.000,00";"625.795,32";"7.901.035,47";"158,02"
+"7218041";"CPSSS Patronal - Parcelamentos - Servidor Civil Ativo";"5.000.000,00";"625.795,32";"7.901.035,47";"158,02"
+"72180410";"CPSSS Patronal - Parcelamentos - Servidor Civil AtivQ";"5.000.000,00";"625.795,32";"7.901.035,47";"158,02"
+"7218041001";"CPSSS Patronal - Parcelamentos - Servidor Civil Ativ";"5.000.000,00";"625.795,32";"7.901.035,47";"158,02"
