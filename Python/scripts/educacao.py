@@ -17,6 +17,12 @@ escolas = pd.read_csv(src_escolas,sep=";")
 
 despesas = pd.read_csv(src_despesas,sep=";")
 
+
+
+##############################################
+############## Totais ########################
+##############################################
+
 totais = pd.DataFrame(columns=["indicador","qtd"])
 
 total_alunos  = alunos.loc[(alunos['desistiu'] == 'NAO'),'id'].count()
@@ -35,12 +41,8 @@ totais = totais.append({'indicador':'total_alunos_inativo','qtd':alunos.loc[(alu
 totais = totais.append({'indicador':'ociosidade','qtd':total_alunos/total_professores},ignore_index = True)
 totais = totais.append({'indicador':'ociosidade_parametro','qtd':20},ignore_index = True)
 
-
-
 if(salvar):
     totais.to_json(f'{dst_base}/totais.json',orient="records")
-
-
 
 ##############################################
 ###### Evasão Escolar po Mês #################
@@ -75,7 +77,37 @@ relacao_custo = despesas.groupby(['ano','mes'])[['despesa_discente','despesa_adm
 if(salvar):
     relacao_custo.to_json(f'{dst_base}/relacao_custo.json',orient="records")
 
-# print()
 
 
+
+##############################################
+########### Escola  ##########################
+##############################################
+
+prof = professores.groupby(['escola','tipo']).count()
+
+prof = prof.drop(columns=['salario'])
+prof.keys = ['escola']
+prof = prof.unstack().reset_index()
+prof = prof.droplevel(0,axis=1)
+prof.columns = ['escola','contrato','efetivo']
+# escolas.index = escolas.index.astype(int)
+# escolas['id'] = escolas['id'].astype(int)
+# prof['escola'] = prof['escola'].astype(int)
+
+al = alunos.groupby('escola').count()
+
+al = al[['id']]
+al.columns = ['alunos']
+al = al.reset_index()
+
+# print(al.head())
+
+
+esc = pd.merge(escolas,prof,how='left',left_on='id',right_on='escola').drop(columns=['escola'])
+esc = pd.merge(esc,al,how='left',left_on='id',right_on='escola').drop(columns=['escola'])
+print(esc.head())
+
+if(salvar):
+    esc.to_json(f'{dst_base}/escolas.json',orient="records")
 
