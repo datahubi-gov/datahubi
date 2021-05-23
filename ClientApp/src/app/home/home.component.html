@@ -51,8 +51,16 @@
     <div>
       <grafico *ngIf="dadosCarregados" [opcoes]="comparativoMensal" tipo="bar"></grafico>
     </div>
+
   </div>
   <div class="col-md-6">
-
+    <div id="wrap">
+      <div id="chart-year">
+        <grafico *ngIf="dadosCarregados" [opcoes]="chartOptions" tipo="bar"></grafico>
+      </div>
+      <div id="chart-quarter">
+        <grafico *ngIf="dadosCarregados" [opcoes]="chartQuarterOptions" tipo="bar"></grafico>
+      </div>
+    </div>
   </div>
 </div>
