@@ -6,6 +6,9 @@ import { HttpClient } from '@angular/common/http';
 import { AreaService } from './api/area.service';
 import { CalculoService } from './api/calculo.service';
 import { DadosService } from './api/dados.service';
+import { ImportacaoService } from './api/importacao.service';
+import { IndicativoService } from './api/indicativo.service';
+import { MetricaService } from './api/metrica.service';
 
 @NgModule({
   imports:      [],
