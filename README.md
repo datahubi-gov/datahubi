@@ -1,4 +1,4 @@
-# DataHuBI - *A informação é o comustível do futuro!*
+# DataHuBI - *A informação é o combustível do futuro!*
 
 ![DataHuBI](ClientApp/src/assets/img/logo.svg)
 
