@@ -1,0 +1,147 @@
+<div class="titulo">
+    <div class="pagina">
+        <i class="las la-file-download"></i>
+        <div>
+            <h1><b>Importar fonte de dados</b></h1>
+            <p>Conecte uma nova de dados ao DataHuBI</p>
+        </div>
+    </div>
+    <div class="info">
+        <p><i class="las la-calendar-day"></i> Última importação: <b>22/05/2021</b></p>
+        <p><i class="las la-file-excel"></i> Arquivo XLS: <b>lista-escolas.xls</b></p>
+    </div>
+</div>
+
+<div class="separador"></div>
+
+<h5 class="mb-3">Com que tipo de fonte de dados deseja se conectar?</h5>
+<div class="row">
+    <div class="col-md-3">
+        <div class="indicador-texto secundario pequeno">
+            <i class="lar la-file-excel"></i>
+            <div>
+                <b>Planilhas</b>
+                <p>Arquivos do excel</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="indicador-texto secundario pequeno">
+            <i class="las la-home"></i>
+            <div>
+                <b>Arquivos CSV</b>
+                <p>Comma-separated values</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="indicador-texto secundario pequeno">
+            <i class="las la-home"></i>
+            <div>
+                <b>Banco de dados</b>
+                <p>Conexão direta</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="indicador-texto secundario pequeno">
+            <i class="las la-home"></i>
+            <div>
+                <b>API</b>
+                <p>Conexão http</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="separador-0"></div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h5 class="mb-3">Planilhas - Arquivos xls</h5>
+        <div>
+            <label for="formFileLg" class="form-label">Selecione o arquivo que vai ser importado</label>
+            <input class="form-control form-control-lg" id="formFileLg" type="file">
+        </div>
+
+        <div class="separador"></div>
+
+        <div class="row">
+            <div class="col-md-5">
+                <h5 class="mb-3">Campos na origem</h5>
+            </div>
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-5">
+                <h5 class="mb-3">Campos no destino</h5>
+            </div>
+        </div>
+
+        <div class="fontes-dados">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="fonte-origem">
+                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                            placeholder="Digite para pesquisar...">
+                        <datalist id="datalistOptions">
+                            <option value="San Francisco">
+                            <option value="New York">
+                            <option value="Seattle">
+                            <option value="Los Angeles">
+                            <option value="Chicago">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <i class="las la-arrow-right"></i>
+                </div>
+                <div class="col-md-5">
+                    <div class="fonte-destino">
+                        <div class="fonte-destino-item">
+                            <p>id: any</p>
+                            <small>Identificador único</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fontes-dados">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="fonte-origem">
+                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                            placeholder="Digite para pesquisar...">
+                        <datalist id="datalistOptions">
+                            <option value="San Francisco">
+                            <option value="New York">
+                            <option value="Seattle">
+                            <option value="Los Angeles">
+                            <option value="Chicago">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <i class="las la-arrow-right"></i>
+                </div>
+                <div class="col-md-5">
+                    <div class="fonte-destino">
+                        <div class="fonte-destino-item">
+                            <p>data: datetime</p>
+                            <small>Data no formato yyyy-mm-dd</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="col-md-4">
+
+    </div> -->
+</div>
+
+<div class="separador"></div>
+
+<div class="botao-destaque" [routerLink]="['/importador']">
+    <i class="las la-file-download"></i>
+    <p><b>Importar agora!</b></p>
+</div>

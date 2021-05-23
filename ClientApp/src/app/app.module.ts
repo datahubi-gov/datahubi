@@ -16,6 +16,7 @@ import { DetalhesComponent } from './detalhes/detalhes.component';
 import { ApiModule, Configuration } from './shared/sdkcore';
 import { environment } from 'src/environments/environment';
 import { ComunicService } from './comunic.service';
+import { ImportadorComponent } from './importador/importador.component';
 
 export const apiConfig = new Configuration({
   apiKeys: {},
@@ -35,7 +36,8 @@ export function getApiConfig() {
     FetchDataComponent,
     GraficoComponent,
     EducacaoComponent,
-    DetalhesComponent
+    DetalhesComponent,
+    ImportadorComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -49,6 +51,7 @@ export function getApiConfig() {
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'educacao', component: EducacaoComponent },
       { path: 'detalhes', component: DetalhesComponent },
+      { path: 'importador', component: ImportadorComponent },
     ])
   ],
   providers: [

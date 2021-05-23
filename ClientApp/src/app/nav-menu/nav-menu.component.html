@@ -8,48 +8,48 @@
 
     <div class="menu-principal">
       <ul>
-        <li [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+        <li>
           <a [routerLink]="['/']">
             <p><i class="las la-clipboard-list"></i> Início</p>
           </a>
         </li>
-        <li [routerLinkActive]="['link-active']">
-          <a [routerLink]="['/counter']">
+        <li>
+          <a [routerLink]="['/counter']" [routerLinkActive]="['link-active']">
             <p><i class="las la-heartbeat"></i> Saúde</p>
           </a>
         </li>
-        <li [routerLinkActive]="['link-active']">
-          <a [routerLink]="['/educacao']">
+        <li>
+          <a [routerLink]="['/educacao']" [routerLinkActive]="['link-active']">
             <p><i class="las la-graduation-cap"></i> Educação</p>
           </a>
         </li>
-        <li [routerLinkActive]="['link-active']">
-          <a [routerLink]="['/fetch-data']">
+        <li>
+          <a [routerLink]="['/fetch-data']" [routerLinkActive]="['link-active']">
             <p><i class="las la-shield-alt"></i> Segurança Pública</p>
           </a>
         </li>
-        <li [routerLinkActive]="['link-active']">
-          <a [routerLink]="['/fetch-data']">
+        <li>
+          <a [routerLink]="['/fetch-data']" [routerLinkActive]="['link-active']">
             <p><i class="las la-file-invoice-dollar"></i> Fazenda</p>
           </a>
         </li>
-        <li [routerLinkActive]="['link-active']">
-          <a [routerLink]="['/fetch-data']">
+        <li>
+          <a [routerLink]="['/fetch-data']" [routerLinkActive]="['link-active']">
             <p><i class="las la-city"></i> Infra-estrutura</p>
           </a>
         </li>
-        <li [routerLinkActive]="['link-active']">
-          <a [routerLink]="['/fetch-data']">
+        <li>
+          <a [routerLink]="['/fetch-data']" [routerLinkActive]="['link-active']">
             <p><i class="lab la-pagelines"></i> Meio ambiente</p>
           </a>
         </li>
-        <li [routerLinkActive]="['link-active']">
-          <a [routerLink]="['/fetch-data']">
+        <li>
+          <a [routerLink]="['/fetch-data']" [routerLinkActive]="['link-active']">
             <p><i class="las la-ruler-combined"></i> Planejamento</p>
           </a>
         </li>
-        <li [routerLinkActive]="['link-active']">
-          <a [routerLink]="['/fetch-data']">
+        <li>
+          <a [routerLink]="['/fetch-data']" [routerLinkActive]="['link-active']">
             <p><i class="las la-hand-holding-heart"></i> Ação social</p>
           </a>
         </li>
@@ -58,16 +58,16 @@
 
     <div class="separador"></div>
 
-    <div class="botao-importacao">
-      <i class="las la-plug"></i>
-      <i class="las la-plug marca"></i>
-      <p>Conectar <b>fonte de dados</b></p>
+    <div class="botao-importacao" [routerLink]="['/importador']" [routerLinkActive]="['desativado']">
+      <i class="las la-file-download"></i>
+      <i class="las la-file-download marca"></i>
+      <p>Importar <b>dados</b></p>
     </div>
 
     <div class="separador-0"></div>
 
     <p>
-      <i class="las la-plug"></i> Última conexão realizada em 22/05/2021
+      <i class="las la-file-download"></i> Última importação: 22/05/2021
     </p>
   </nav>
 </header>
