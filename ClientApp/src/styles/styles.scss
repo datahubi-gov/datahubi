@@ -55,6 +55,36 @@ code {
 
 // #region compartilhados
 
+.botao-destaque{
+  @extend %gradiente-back-4;
+  @include box-shadow(rgba($cor-9, .5) 0 5px 20px);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1.4em;
+  font-weight: bold;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  align-items: center;
+  padding: 20px 35px 20px 20px;
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-flex;
+  transition: transform .2s;
+
+  *{
+    color: #fff;
+  }
+
+  i{
+    font-size: 1.7em;
+  }
+
+  &:hover{
+    @include transform(translateY(-5px));
+  }
+}
+
 .titulo{
   display: flex;
   justify-content: space-between;
@@ -88,7 +118,13 @@ code {
     flex-direction: column;
 
     p{
-      font-size: 1.4em;
+      font-size: 1.2em;
+
+      i{
+        font-size: 1.5em;
+        color: $cor-secundaria;
+        position: relative; top: 3px;
+      }
     }
 
     ul{
@@ -187,7 +223,7 @@ input[type=text]{
 // #region topo e menu
 
 .topo-menu{
-  padding-right: 50px;
+  padding-right: 100px;
 }
 
 .logo{
@@ -202,9 +238,11 @@ input[type=text]{
 .menu-principal{
 
   li{
+    margin-bottom: 5px;
+    
     a{
       display: block;
-      padding: 7px 0;
+      padding: 7px 0 9px 0;
       font-weight: bold;
       text-transform: uppercase;
       color: $cor-texto;
@@ -234,10 +272,10 @@ input[type=text]{
         z-index: 1;
       }
 
-      &:hover{
+      &:hover, &.link-active{
         text-decoration: none;
         color: #fff;
-        padding-left: 20px;
+        padding-left: 23px;
 
         i, p{
           color: #fff;
@@ -300,7 +338,7 @@ input[type=text]{
     &.marca{
       font-size: 8em;
       position: absolute; z-index: 0;
-      bottom: -120px; right: -30px;
+      bottom: 10px; right: -20px;
       color: rgba(#000, .1);
     }
   }
@@ -315,6 +353,10 @@ input[type=text]{
       font-weight: bold;
       display: block;
     }
+  }
+
+  &.desativado{
+    display: none;
   }
 }
 
@@ -350,10 +392,18 @@ input[type=text]{
     @extend %gradiente-back-5;
     @include box-shadow(rgba($cor-11, .5) 0 5px 20px);
   }
+
+  &.pequeno{
+    b{
+      display: block;
+      font-size: 1.5em;
+      letter-spacing: -0.03em;
+      margin-bottom: 3px;
+    }
+  }
 }
 
 .lista-grid-item{
-  //background: $cor-fundo-claro;
   border: 1px solid darken($cor-fundo-claro, 5%);
   margin-top: -1px;
   transition: background-color .5s;
@@ -381,5 +431,33 @@ input[type=text]{
   }
 }
 
-
 // #endregion dashboard 
+
+// #region Importador
+
+.fontes-dados{
+  margin-bottom: 10px;
+
+  i{
+    color: $cor-secundaria;
+    font-size: 2.8em;
+  }
+}
+
+.fonte-origem{
+  margin-top: 5px;
+}
+
+.fonte-destino{
+  p{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+}
+
+.fonte-destino-item{
+  line-height: 1.3em;
+}
+
+// #endregion Importador
