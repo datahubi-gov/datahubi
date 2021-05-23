@@ -185,7 +185,10 @@ export class HomeComponent implements OnInit {
           ],
           chart: {
             type: "bar",
-            height: 350
+            height: 450,
+            toolbar: {
+              show: false
+            }   
           },
           plotOptions: {
             bar: {
@@ -342,7 +345,7 @@ export class HomeComponent implements OnInit {
           series: [
             {
               name: "meses",
-              data: []
+              data: lista.filter(x => x.ano == 2020).map(x => { return { x: x.mes, y: x.IPTU_SIM + x.ISS_SIM + x.LIXO_SIM + x.MULTA_SIM + x.TAXAS_SIM } })
             }
           ],
           chart: {
@@ -350,21 +353,24 @@ export class HomeComponent implements OnInit {
             height: 400,
             width: "100%",
             type: "bar",
-            stacked: true
+            stacked: true,
+            toolbar: {
+              show: false
+            }
           },
           plotOptions: {
             bar: {
               columnWidth: "50%",
-              horizontal: false
+              horizontal: true
             }
           },
           legend: {
-            show: false
+            show: true
           },
           grid: {
             yaxis: {
               lines: {
-                show: false
+                show: true
               }
             },
             xaxis: {
@@ -375,7 +381,7 @@ export class HomeComponent implements OnInit {
           },
           yaxis: {
             labels: {
-              show: false
+              show: true
             }
           },
           title: {

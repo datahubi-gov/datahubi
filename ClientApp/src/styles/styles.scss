@@ -467,8 +467,8 @@ input[type=text]{
 
 // #region mapa Home
 #wrap {
-  margin: 45px auto;
-  max-width: 800px;
+  margin: 0 auto;
+  //max-width: 800px;
   position: relative;
 }
 
@@ -478,7 +478,7 @@ input[type=text]{
 
 #chart-year,
 #chart-quarter {
-  width: 96%;
+  //width: 96%;
   max-width: 48%;
   box-shadow: none;
   padding-left: 0;
