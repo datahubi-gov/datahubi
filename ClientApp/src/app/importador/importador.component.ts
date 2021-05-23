@@ -21,6 +21,19 @@ export class ImportadorComponent implements OnInit {
   public nomeArquivo: string = '';
   public arquivo: File = null;
 
+  public campos: any[] = [
+    { nome: 'ano', campo: 'Ano', nomeCampo: 'ano', tipo: 'any' },
+    { nome: 'mes', campo: 'Mês', nomeCampo: 'mês', tipo: 'número' },
+    { nome: 'escola', campo: 'Escola - identificador', nomeCampo: 'escola', tipo: 'texto' },
+    { nome: 'tipo', campo: 'Tipo', nomeCampo: 'categoria', tipo: 'categoria' },
+    { nome: 'qtd_discente_efetivo', campo: 'Quant. professores efetio', nomeCampo: 'qtdProfEfetivo', tipo: 'número' },
+    { nome: 'qtd_discente_contrato', campo: 'Quant. professores contrato', nomeCampo: 'qtdProfContrato', tipo: 'número' },
+    { nome: 'despesa_discente', campo: 'Despesa professores', nomeCampo: 'despesaProfessor', tipo: 'número' },
+    { nome: 'despesa_administrativo', campo: 'Despesa servidores', nomeCampo: 'despesaServidor', tipo: 'número' },
+    { nome: 'despesa_geral', campo: 'Despesa geral', nomeCampo: 'despesaGeral', tipo: 'número' },
+    { nome: 'despesa', campo: 'Total de Despesa', nomeCampo: 'despesaTotal', tipo: 'número' },
+  ];
+
   ngOnInit(): void {
 
   }

@@ -12,6 +12,8 @@
     dotnet Framework 5.0
     Angular 12 
     Python 3.9 (Libs: pandas, numpy, geopandas, faker)
+    Banco de dados: MongoDB e arquivos CSV
+
 ## Pré-requisito
     Node.js 
     Angular CLI

@@ -82,7 +82,31 @@
                 </div>
             </div>
 
-            <div class="fontes-dados">
+            <div *ngFor="let item of campos" class="fontes-dados">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="fonte-origem">
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" [value]="item.nome" placeholder="Digite para pesquisar...">
+                            <datalist id="datalistOptions">
+                                <option *ngFor="let item of lista" value="{{item}}">
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <i class="las la-arrow-right"></i>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="fonte-destino">
+                            <div class="fonte-destino-item">
+                                <p>{{item.nomeCampo}}: {{item.tipo}}</p>
+                                <small>{{item.tipo}}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="fontes-dados">
                 <div class="row">
                     <div class="col-md-5">
                         <div class="fonte-origem">
@@ -104,8 +128,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="fontes-dados">
+            </div> -->
+            <!-- <div class="fontes-dados">
                 <div class="row">
                     <div class="col-md-5">
                         <div class="fonte-origem">
@@ -127,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- <div class="col-md-4">
