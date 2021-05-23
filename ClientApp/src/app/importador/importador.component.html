@@ -58,7 +58,7 @@
 
 <div class="row">
     <div class="col-md-12">
-        <h5 class="mb-3">Planilhas - Arquivos xls</h5>
+        <h5 class="mb-3">Planilhas - Arquivos csv</h5>
         <div>
             <label for="formFileLg" class="form-label">Selecione o arquivo que vai ser importado</label>
             <input class="form-control form-control-lg" id="formFileLg" type="file" #file (change)="confirmFileSubmit($event.target.files)">
@@ -137,7 +137,16 @@
 
 <div class="separador"></div>
 
-<div class="botao-destaque" [routerLink]="['/importador']">
-    <i class="las la-file-download"></i>
-    <p><b>Importar agora!</b></p>
+<div *ngIf="!comunic.carregando" class="botao-destaque" (click)="enviar()">
+    <i class="las la-file-upload"></i>
+    <p><b>Enviaro arquivo!</b></p>
+</div>
+ 
+<div *ngIf="!comunic.carregando" class="botao-destaque" (click)="processar()">
+    <i class="las la-play-circle"></i>
+    <p><b>Processar agora!</b></p>
+</div>
+<div *ngIf="comunic.carregando" class="botao-destaque">
+    <i class="las la-play-circle"></i>
+    <p><b>Por favor aguarde...</b></p>
 </div>

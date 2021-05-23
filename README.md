@@ -1,4 +1,4 @@
-# DataHuBI - *Informação para tomada de decisão*
+# DataHuBI - *A informação é o comustível do futuro!*
 
 ![DataHuBI](ClientApp/src/assets/img/logo.svg)
 

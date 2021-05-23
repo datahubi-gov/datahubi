@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -36,6 +37,8 @@ namespace Datahubi.Controllers
             return File(dados, "application/json");
         }
 
+
+
         [HttpPost("upload")]
         public async Task<ActionResult> PostUploadAsync(
                 IFormFile arquivo,
@@ -54,18 +57,44 @@ namespace Datahubi.Controllers
                     {
                         await arquivo.CopyToAsync(filestream);
                         filestream.Flush();
-                        return Ok("Arquivo enviado com sucesso");
+                        return Ok(new { msg = "Arquivo enviado com sucesso" });
                     }
                 }
                 catch (Exception ex)
                 {
-                    return BadRequest(ex.ToString());
+                    return BadRequest(new { erro = ex.ToString() });
                 }
             }
             else
             {
-                return BadRequest("Ocorreu uma falha no envio do arquivo...");
+                return BadRequest(new { erro = "Ocorreu uma falha no envio do arquivo..." });
             }
+        }
+
+        [HttpPost("processar")]
+        public ActionResult PostProcessar(
+                [FromQuery] string area,
+                [FromServices] IHttpContextAccessor accessor,
+                [FromServices] IWebHostEnvironment _environment)
+        {
+            DateTime inicio = DateTime.Now;
+            Process process = new Process();
+            process.StartInfo.FileName = "py"; //Executável do python
+            process.StartInfo.Arguments = Path.Combine(_environment.WebRootPath + $@"\..\Python\scripts\", area + ".py");
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.RedirectStandardError = true; //Pega saída de erros
+            process.StartInfo.RedirectStandardOutput = true; //Pega a saída        
+            process.Start();
+
+            StreamReader reader = process.StandardOutput;
+            string output = reader.ReadToEnd();
+
+            Console.WriteLine(output);
+
+            process.WaitForExit();
+            process.Close();
+
+            return Ok(new { saida = output, inicio = inicio, fim = DateTime.Now });
         }
 
         private string PreparaDiretorio(string diretorio, IWebHostEnvironment _environment)
@@ -77,31 +106,5 @@ namespace Datahubi.Controllers
             if (!Directory.Exists(diretorio)) Directory.CreateDirectory(diretorio);
             return diretorio;
         }
-
-        // [HttpPost]
-        // public ActionResult Post(Models.Area model)
-        // {
-        //     Models.Area registro;
-        //     if (string.IsNullOrEmpty(model.Id)) //Inserir
-        //     {
-        //         registro = _rep.Area.Inserir(model);
-        //     }
-        //     else //Atualizar
-        //     {
-        //         _rep.Area.Atualizar(model.Id, model);
-        //         return Ok(model);
-        //     }
-        //     return Ok(registro);
-        // }
-
-        // [HttpDelete]
-        // public ActionResult Delete(string id)
-        // {
-        //     if (string.IsNullOrEmpty(id)) return BadRequest("Registro sem id informado");
-        //     var registro = _rep.Area.Obter(id);
-        //     if (id == null) return BadRequest("Registro sem não encontrado!");
-        //     _rep.Area.Remover(registro);
-        //     return Ok();
-        // }
     }
 }
