@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -31,6 +34,48 @@ namespace Datahubi.Controllers
             };
             Response.Headers.Add("Content-Disposition", cd.ToString());
             return File(dados, "application/json");
+        }
+
+        [HttpPost("upload")]
+        public async Task<ActionResult> PostUploadAsync(
+                IFormFile arquivo,
+                [FromQuery] string area,
+                [FromQuery] string fonte,
+                [FromServices] IHttpContextAccessor accessor,
+                [FromServices] IWebHostEnvironment _environment)
+        {
+            if (arquivo.Length > 0)
+            {
+                try
+                {
+                    string diretorio = PreparaDiretorio(area, _environment);
+                    string enderecoArquivo = Path.Combine(diretorio, arquivo.FileName);
+                    using (FileStream filestream = System.IO.File.Create(enderecoArquivo))
+                    {
+                        await arquivo.CopyToAsync(filestream);
+                        filestream.Flush();
+                        return Ok("Arquivo enviado com sucesso");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest(ex.ToString());
+                }
+            }
+            else
+            {
+                return BadRequest("Ocorreu uma falha no envio do arquivo...");
+            }
+        }
+
+        private string PreparaDiretorio(string diretorio, IWebHostEnvironment _environment)
+        {
+            if (string.IsNullOrEmpty(diretorio)) diretorio = @"";
+            if (diretorio == "/") diretorio = "";
+            diretorio = diretorio.Replace("/", @"\").Replace("..", "");
+            diretorio = Path.Combine(_environment.WebRootPath + $@"\..\Python\dados\", diretorio);
+            if (!Directory.Exists(diretorio)) Directory.CreateDirectory(diretorio);
+            return diretorio;
         }
 
         // [HttpPost]

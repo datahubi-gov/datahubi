@@ -7,8 +7,8 @@
         </div>
     </div>
     <div class="info">
-        <p><i class="las la-calendar-day"></i> Última importação: <b>22/05/2021</b></p>
-        <p><i class="las la-file-excel"></i> Arquivo XLS: <b>lista-escolas.xls</b></p>
+        <p><i class="las la-calendar-day"></i> Última importação: <b>{{hoje | date :'dd/MM/yyyy'}}</b></p>
+        <p *ngIf="nomeArquivo"><i class="las la-file-excel"></i> Arquivo: <b>{{nomeArquivo}}</b></p>
     </div>
 </div>
 
@@ -61,73 +61,69 @@
         <h5 class="mb-3">Planilhas - Arquivos xls</h5>
         <div>
             <label for="formFileLg" class="form-label">Selecione o arquivo que vai ser importado</label>
-            <input class="form-control form-control-lg" id="formFileLg" type="file">
+            <input class="form-control form-control-lg" id="formFileLg" type="file" #file (change)="confirmFileSubmit($event.target.files)">
         </div>
 
         <div class="separador"></div>
 
-        <div class="row">
-            <div class="col-md-5">
-                <h5 class="mb-3">Campos na origem</h5>
-            </div>
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-5">
-                <h5 class="mb-3">Campos no destino</h5>
-            </div>
-        </div>
+        <!-- se tiver algum arquivo selecionado -->
+        <div *ngIf="lista?.length">
+            <h4 class="mb-3">Dicionário de Dados</h4>
 
-        <div class="fontes-dados">
+
             <div class="row">
                 <div class="col-md-5">
-                    <div class="fonte-origem">
-                        <input class="form-control" list="datalistOptions" id="exampleDataList"
-                            placeholder="Digite para pesquisar...">
-                        <datalist id="datalistOptions">
-                            <option value="San Francisco">
-                            <option value="New York">
-                            <option value="Seattle">
-                            <option value="Los Angeles">
-                            <option value="Chicago">
-                        </datalist>
-                    </div>
+                    <h5 class="mb-3">Campos na origem</h5>
                 </div>
-                <div class="col-md-2 text-center">
-                    <i class="las la-arrow-right"></i>
+                <div class="col-md-2">
                 </div>
                 <div class="col-md-5">
-                    <div class="fonte-destino">
-                        <div class="fonte-destino-item">
-                            <p>id: any</p>
-                            <small>Identificador único</small>
+                    <h5 class="mb-3">Campos no destino</h5>
+                </div>
+            </div>
+
+            <div class="fontes-dados">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="fonte-origem">
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Digite para pesquisar...">
+                            <datalist id="datalistOptions">
+                                <option *ngFor="let item of lista" value="{{item}}">
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center">
+                        <i class="las la-arrow-right"></i>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="fonte-destino">
+                            <div class="fonte-destino-item">
+                                <p>id: any</p>
+                                <small>Identificador único</small>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="fontes-dados">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="fonte-origem">
-                        <input class="form-control" list="datalistOptions" id="exampleDataList"
-                            placeholder="Digite para pesquisar...">
-                        <datalist id="datalistOptions">
-                            <option value="San Francisco">
-                            <option value="New York">
-                            <option value="Seattle">
-                            <option value="Los Angeles">
-                            <option value="Chicago">
-                        </datalist>
+            <div class="fontes-dados">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="fonte-origem">
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Digite para pesquisar...">
+                            <datalist id="datalistOptions">
+                                <option *ngFor="let item of lista" value="{{item}}">
+                            </datalist>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-2 text-center">
-                    <i class="las la-arrow-right"></i>
-                </div>
-                <div class="col-md-5">
-                    <div class="fonte-destino">
-                        <div class="fonte-destino-item">
-                            <p>data: datetime</p>
-                            <small>Data no formato yyyy-mm-dd</small>
+                    <div class="col-md-2 text-center">
+                        <i class="las la-arrow-right"></i>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="fonte-destino">
+                            <div class="fonte-destino-item">
+                                <p>data: datetime</p>
+                                <small>Data no formato yyyy-mm-dd</small>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +27,8 @@ namespace Datahubi
             services.Configure<Data.DatabaseSettings>(Configuration.GetSection(nameof(Data.DatabaseSettings)));
             services.AddSingleton<Data.IDatabaseSettings>(sp => sp.GetRequiredService<IOptions<Data.DatabaseSettings>>().Value);
             services.AddSingleton<Data.Repositorio>();
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>(); 
 
             services.AddControllersWithViews();
 
